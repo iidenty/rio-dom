@@ -1,7 +1,5 @@
-## Gulp start project - Окружение для разработки веб-проектов
-Готовое окружение для разработки фронтенд части сайта.
-
-![Gulp start project](https://file.modx.pro/files/7/5/b/75b20cd2f756ca131ea048d6e6d865d4.png)
+## RIO-DOM
+Веб-сайт
 
 ## Требования к окружению
 Для создания окружения необходимо иметь следующие установленные инструменты:
@@ -18,7 +16,7 @@
 Скачайте файлы с github или клонируйте его c помощью команды:
 
 ```bash
-git clone https://github.com/alexsoin/gulp-start-project.git
+git clone https://github.com/da3nil/rio-dom.git
 ```
 
 ### 2. Установки зависимостей проекта
