@@ -2,7 +2,7 @@
 Веб-сайт 
 
 ## Ссылки: 
-1. <a href='https://da3nil.github.io/rio-dom/build/'>Фронтенд</a>
+1. <a target="_blank" href='https://da3nil.github.io/rio-dom/build/'>Фронтенд</a>
 
 ## Требования к окружению
 Для создания окружения необходимо иметь следующие установленные инструменты:
