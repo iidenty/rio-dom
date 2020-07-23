@@ -24,17 +24,20 @@
 </section>
 
 <div class="break">
-    <div class="break__image"></div>
+    <div class="break__image">
+        <img src="img/gallery__before.png" class="img-fluid" alt="">
+    </div>
 </div>
 
 <section class="gallery">
     <div class="gallery__container screen">
+        <div class="gallery__background"></div>
         <div class="gallery__gradient"></div>
         <div class="gallery__inner">
             <div class="container">
                 <div class="row">
                     <div class="offset-md-1 col-md-6">
-                        <div class="gallery__header pb-4 text-uppercase text-orange" style="white-space: nowrap">От голых стен – до <br>готового ремонта</div>
+                        <div class="gallery__header header-1 pb-4 text-uppercase text-orange">От голых стен – до <br>готового ремонта</div>
                         <div class="gallery__text pb-4">
                             Хотите жить в квартире с уникальным интерьером?
                         </div>
@@ -47,33 +50,163 @@
                     <div class="offset-md-1 col-md-6">
                         <div class="gallery__toggle text-uppercase">Смотреть до / после</div>
                     </div>
-<!--                    <div class="offset-md-2 col-md-4">-->
-<!--                        <div class="gallery__slider">-->
-<!--                            <div class="gallery__indicators row">-->
-<!--                                <div class="col-md-6 col-4 pr-0 mr-0">-->
-<!--                                    <span class="indicators__item"></span>-->
-<!--                                    <span class="indicators__item"></span>-->
-<!--                                    <span class="indicators__item"></span>-->
-<!--                                    <span class="indicators__item indicators__item_active"></span>-->
-<!--                                </div>-->
-<!--                                <div class="col-md-6 col-4 pl-0 ml-0">-->
-<!--                                    <span class="indicators__line"></span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <div class="col-md-4">
+                        <div class="gallery__slider">
+                            <div class="gallery__indicators">
+                                <div class="indicators__item indicators__item_active"></div>
+                                <div class="indicators__item"></div>
+                                <div class="indicators__item"></div>
+                                <div class="indicators__item"></div>
+
+                                <div class="indicators__line"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="gallery__house">
+        <div class="gallery__house d-none d-md-block">
             <img src="img/gallery__house.png" alt="">
         </div>
     </div>
 </section>
 
-<section class="intro">
-    <div class="intro__container screen" style="background-color: #86cfda">
-        <h1 class="intro__header text-orange-lg">Калькулятор</h1>
+<!--<div class="break">-->
+<!--    <div class="break__image">-->
+<!--        <img class="img-fluid" src="img/gallery__after.png" alt="">-->
+<!--    </div>-->
+<!--</div>-->
+
+<section class="calc">
+    <div class="calc__container screen">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="offset-1 col-md-10">
+                    <div class="calc__header text-center text-uppercase text-dark header-1">калькулятор</div>
+                    <div class="calc__description text-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="calc__item">
+                                <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                <div class="item__content row">
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="calc__item">
+                                <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                <div class="item__content">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="calc__item">
+                                <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                <div class="item__content row">
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="calc__item">
+                                <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                <div class="item__content row">
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">
+                            <div class="calc__item">
+                                <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                <div class="item__content row">
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label>
+                                            <input type="radio" name="type" value="kv">
+                                            КВАРТИРА
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">
+                            <img class="img-fluid" src="img/calc__book.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-6 mt-4">1</div>
+                        <div class="col-md-4 col-6 mt-4">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="calc__header text-orange-lg"></h1>
     </div>
 </section>
 

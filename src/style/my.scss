@@ -4,6 +4,15 @@
   src: url("../fonts/PF Din Text Comp Pro.ttf");
 }
 
+body {
+  font-family: "PF Din Text Comp Pro", sans-serif;
+  font-size: calc(16px + 0.2vw);
+}
+
+label {
+  display: block;
+}
+
 // screen
 .screen {
   height: 100vh;
@@ -18,7 +27,7 @@
 
 .break__image {
   z-index: 10;
-  background: url("../img/gallery__before.png");
+  //background: url("../img/gallery__before.png");
   position: absolute;
   top: -60px;
   left: 0;
@@ -26,25 +35,36 @@
   height: 130px;
 }
 
-// text orange
+.break__image img {
+
+}
+
+// text
 .text-orange {
   color: #ffb116;
   font-family: "PF Din Text Comp Pro", sans-serif;
 }
 
-// gallery
-.gallery:before {
-  //content: "";
-  //display: block;
-  //height: 130px;
-  //background-size: 100% 100%;
-  //background: url("../img/gallery__before.png");
+.header-1 {
+  font-family: "PF Din Text Comp Pro", sans-serif;
+  line-height: normal;
+  font-size: calc(1.3em + 1.3vw);
+  font-weight: 500;
 }
+
+.header-2 {
+  font-family: "PF Din Text Comp Pro", sans-serif;
+  font-size: calc(1.3em + 0.4vw);
+}
+
+// gallery
 .gallery__container {
-  background-size: 100%;
+  background-size: 100% 100%;
   position: relative;
   min-height: 600px;
-  background: url('../img/gallery_1.jpg') no-repeat center center;
+  //background-image: url('../img/gallery_1.jpg');
+  //background-repeat: no-repeat;
+  //background-position: center center;
 }
 
 .gallery__inner {
@@ -55,7 +75,8 @@
 }
 
 .gallery__header {
-  font-size: calc(1.3em + 3vw);
+  //font-size: calc(1.3em + 3vw);
+  white-space: nowrap
 }
 
 .gallery__text {
@@ -70,8 +91,8 @@
   font-size: calc(16px + 0.3vw);
 }
 
-.gallery__slider, .gallery__indicators {
-  //width: 100%;
+.gallery__indicators {
+  display: flex;
 }
 
 .indicators__line {
@@ -87,9 +108,10 @@
   display: block;
   margin-right: 10px;
   opacity: 0.46;
-  float: right;
   width: 10px;
   height: 10px;
+  min-width: 10px;
+  min-height: 10px;
   background: #ffffff;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -104,17 +126,30 @@
   opacity: 1;
 }
 
+.gallery__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('../img/gallery_1_with_dark_with_line.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
 .gallery__gradient {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: url("../img/gallery__gradient.png") no-repeat;
+  //background: url("../img/gallery__gradient.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .gallery__house {
+  z-index: 30;
   position: absolute;
   bottom: -122px;
   left: -65px;
@@ -128,5 +163,23 @@
 @media screen and (max-device-width: 767px) {
   .gallery__gradient {
     background: black;
+  }
+}
+
+// Calc
+.calc {
+  z-index: 5;
+  margin-top: -36px;
+}
+
+.calc__container {
+  background-image: url("../img/calc__background_with_text.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-device-width: 767px) {
+  .calc__container {
+    background: #ffffff;
   }
 }
