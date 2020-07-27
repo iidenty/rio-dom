@@ -18620,16 +18620,16 @@ $(indicators).click(function (event) {
         // container.animate({'opacity': 0}, 150, function () {
         switch (i) {
             case 0:
-                container.css({'background-image': "url(../img/gallery_1_with_dark_with_line.png)"});
+                container.css({'background-image': "url(img/gallery_1_with_dark_with_line.png)"});
                 break;
             case 1:
-                container.css({'background-image': "url(../img/gallery_2.jpg)"});
+                container.css({'background-image': "url(img/gallery_2.jpg)"});
                 break;
             case 2:
-                container.css({'background-image': "url(../img/gallery_3.jpg)"});
+                container.css({'background-image': "url(img/gallery_3.jpg)"});
                 break;
             case 3:
-                container.css({'background-image': "url(../img/gallery_4.jpeg)"});
+                container.css({'background-image': "url(img/gallery_4.jpeg)"});
                 break;
         }
         // container.animate({'opacity': 1}, 150);
