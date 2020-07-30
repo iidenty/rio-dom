@@ -7747,6 +7747,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "PF Din Text Comp Pro";
   src: url("../fonts/PF Din Text Comp Pro.ttf"); }
 
+html, body {
+  overflow-x: hidden; }
+
 body {
   font-family: "PF Din Text Comp Pro", sans-serif;
   font-size: calc(16px + 0.2vw); }
@@ -7770,6 +7773,38 @@ label {
 
 .btn-orange:focus {
   outline: none; }
+
+.btn-animate {
+  position: relative; }
+  .btn-animate:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg); }
+  .btn-animate:hover:before {
+    -webkit-animation: move-light 0.5s;
+            animation: move-light 0.5s; }
+
+@-webkit-keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg); }
+  to {
+    -webkit-transform: translateX(20em) skewX(-45deg);
+            transform: translateX(20em) skewX(-45deg); } }
+
+@keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+            transform: translateX(-4em) skewX(-45deg); }
+  to {
+    -webkit-transform: translateX(20em) skewX(-45deg);
+            transform: translateX(20em) skewX(-45deg); } }
 
 .screen {
   height: 107vh; }
@@ -7933,7 +7968,7 @@ label {
   min-height: 49px;
   border: double 1px transparent;
   border-radius: 23px;
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #ffc800 0%, white 95%, white 100%);
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #ffc800 0%, white 120%, white 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
   background-color: #f6f6f6; }
@@ -7999,6 +8034,16 @@ label {
 .include-price__content li:before {
   content: "* "; }
 
+.include-price__house {
+  z-index: 30;
+  position: absolute;
+  bottom: -102px;
+  right: -85px; }
+
+.include-price__house img {
+  width: 221px;
+  height: 238px; }
+
 @media screen and (max-device-width: 767px) {
   .include-price__container {
     height: auto;
@@ -8007,3 +8052,16 @@ label {
 @media screen and (max-device-width: 991px) {
   .include-price__title {
     font-size: 2.5em; } }
+
+.reviews__container {
+  position: relative;
+  margin-top: -30px;
+  padding-top: 100px;
+  background-image: url("../img/reviews__backgroud.png"); }
+
+.reviews__title-before {
+  margin: 0 auto 80px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.7em;
+  text-transform: uppercase; }
