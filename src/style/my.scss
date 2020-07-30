@@ -266,6 +266,7 @@ label {
   //background-clip: content-box, border-box;
   width: 100%;
   height: 100%;
+  min-height: 49px;
   border: double 1px transparent;
   border-radius: 23px;
   background-image: linear-gradient(white, white), linear-gradient(90deg, rgba(255,200,0,1) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
@@ -290,8 +291,72 @@ label {
 }
 
 @media screen and (max-device-width: 767px) {
+  .calc__input-number {
+    border: 1px solid #ffc800;
+  }
   .calc__container {
     background: #ffffff;
     height: auto !important;
+  }
+}
+
+// include-price
+.include-price__container {
+  background: url("../img/include-price__background-with-dark.png") no-repeat;
+  background-size: 100% 100%;
+  min-height: 400px;
+  height: 50vh;
+  position: relative;
+}
+
+.include-price {
+  margin-top: 120px;
+}
+
+.include-price__inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.include-price__title {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0,0,0,0);
+  font-family: "PF Din Text Comp Pro", sans-serif;
+  font-size: 4em;
+  letter-spacing: 10px;
+  -webkit-text-stroke: 1px #ffad0d;
+  //-webkit-text-fill-color: white;
+}
+
+.include-price__item {
+  color: #ffffff;
+}
+
+.include-price__header {
+  text-transform: uppercase;
+  color: #ffb116;
+}
+
+.include-price__content li {
+  list-style-type: none;
+}
+.include-price__content li:before {
+  content: "* ";
+}
+
+@media screen and (max-device-width: 767px) {
+  .include-price__container {
+    height: auto;
+    background: black;
+  }
+}
+
+@media screen and (max-device-width: 991px) {
+  .include-price__title {
+    font-size: 2.5em;
   }
 }
