@@ -9,9 +9,10 @@
     "url": "git://github.com/alexsoin/gulp-start-projet.git"
   },
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6",
-    "bootstrap": "^4.2.1"
+    "jquery-mask-plugin": "^1.14.16",
+    "popper.js": "^1.14.6"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",

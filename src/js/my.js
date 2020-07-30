@@ -28,3 +28,16 @@ $(indicators).click(function (event) {
         $(event.target).addClass('indicators__item_active');
     }
 });
+
+
+$("#phone").on("focus", function () {
+    $("#phone").attr("placeholder", "");
+    $('#phone').val('+7 (');
+});
+
+$("#phone").on("blur", function () {
+    $("#phone").attr("placeholder", "НОМЕР ТЕЛЕФОНА")
+});
+
+
+$('#phone').mask('+7 (000) 000 00 00');
