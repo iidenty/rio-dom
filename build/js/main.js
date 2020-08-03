@@ -18661,15 +18661,20 @@ $(indicators).click(function (event) {
     }
 });
 
+let phones = $('.phone');
 
-$("#phone").on("focus", function () {
-    $("#phone").attr("placeholder", "");
-    $('#phone').val('+7 (');
+phones.on("focus", function () {
+    phones.attr("placeholder", "");
+    phones.val('+7 (');
 });
 
-$("#phone").on("blur", function () {
-    $("#phone").attr("placeholder", "НОМЕР ТЕЛЕФОНА")
+phones.on("blur", function () {
+    phones.attr("placeholder", "НОМЕР ТЕЛЕФОНА")
 });
 
 
-$('#phone').mask('+7 (000) 000 00 00');
+phones.mask('+7 (000) 000 00 00');
+
+$('.services__item').click(function () {
+    alert('Пока нет информации')
+});

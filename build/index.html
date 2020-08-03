@@ -227,7 +227,7 @@
             <div class="row text-center mt-5">
                 <div class="col-md-10 offset-md-1 row">
                     <div class="col-md pl-md-0 pb-3 pb-md-0">
-                        <input autocomplete="off" id="phone" type="text" class="text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА">
+                        <input autocomplete="off" type="text" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА">
                     </div>
                     <div class="col-md pb-3 pb-md-0">
                         <button class="h-100 btn-orange text-uppercase w-100 btn-animate">получить расчет по смс</button>
@@ -338,7 +338,7 @@
                             <div class="services__content">
                                 ПОМОЩЬ ПРИ <br> ПЕРЕЕЗДЕ <br> ВЫДЕЛИМ <br> ТРАНСПОРТ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -353,7 +353,7 @@
                             <div class="services__content">
                                 ПОДБОР <br> МАТЕРИАЛОВ, <br> ОБОРУДОВАНИЯ <br> И МЕБЕЛИ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -368,7 +368,7 @@
                             <div class="services__content">
                                 ЭКСПЕРТНЫЙ <br> НАДЗОР ЗА <br> ХОДОМ <br> РЕМОНТА
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -383,7 +383,7 @@
                             <div class="services__content">
                                 УТЕПЛЕНИЕ <br> БАЛКОНА <br> 50% СКИДКА
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -398,7 +398,7 @@
                             <div class="services__content">
                                 СОЗДАНИЕ <br> УНИКАЛЬНОГО <br> ДИЗАЙНА
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -413,7 +413,7 @@
                             <div class="services__content">
                                 РАЗРАБОТКА <br> СИСТЕМЫ <br> УМНЫЙ ДОМ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -428,7 +428,7 @@
                             <div class="services__content">
                                 ЗАМЕНА <br> ЭЛЕКТРОПРОВОДКИ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -443,7 +443,7 @@
                             <div class="services__content">
                                 РЕМОНТ ПОД <br> КЛЮЧ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -458,7 +458,7 @@
                             <div class="services__content">
                                 СОГЛАСОВАНИЕ <br> ПЕРЕПЛАНИРОВКИ
                             </div>
-                            <button class="services__button" onclick="alert('Событие: нажатие на кнопку')">
+                            <button class="services__button">
                                 Подробнее
                             </button>
                         </div>
@@ -468,8 +468,46 @@
     </div>
 </section>
 
-<section>
-    <h1>Форма обратного звонка</h1>
+<section class="support">
+    <div class="support__container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="support__inner">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="img/support__house.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="support__header mb-2">
+                                    Заказать обратный звонок для консультации
+                                </div>
+                                <div class="support__city mb-2">
+                                    <label class="d-inline" for="city">Ваш город:</label>
+                                    <select class="form-control-plaintext w-auto d-inline" name="city" id="city">
+                                        <option value="краснодар">КРАСНОДАР</option>
+                                        <option value="краснодар">КРАСНОДАР</option>
+                                        <option value="краснодар">КРАСНОДАР</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="support__input" type="text" name="name" placeholder="ИМЯ">
+                                </div>
+                                <div class="form-group">
+                                    <input class="support__input phone" type="text" name="phone" placeholder="НОМЕР ТЕЛЕФОНА">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn-orange btn-animate w-100" style="border-radius: 15px">
+                                        ОТПРАВИТЬ ЗАЯВКУ!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section>
