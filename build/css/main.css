@@ -8066,11 +8066,14 @@ label {
   font-size: 1.7em;
   text-transform: uppercase; }
 
+.services__container .container {
+  margin-top: 80px; }
+
 .services__item {
   position: relative;
   font-size: 1.4em;
   text-align: center;
-  padding-bottom: 55px; }
+  padding-bottom: 0px; }
 
 .services__item:hover .services__button {
   display: -ms-flexbox;
@@ -8100,7 +8103,7 @@ label {
   position: relative;
   width: 240px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 23px 0;
   margin-bottom: 80px;
   border-radius: 50px;
   background-color: #e9e9e9;
