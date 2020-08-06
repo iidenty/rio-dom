@@ -8097,6 +8097,9 @@ label {
   border: 5px solid #ffffff;
   border-radius: 50%; }
 
+.services__top-inner_active {
+  background: linear-gradient(-43deg, rgba(255, 202, 1, 0.7) 0%, rgba(255, 130, 0, 0.7) 100%); }
+
 .services__item img {
   padding-top: 14px; }
 
@@ -8132,6 +8135,17 @@ label {
   display: none;
   pointer-events: all;
   outline: none; }
+
+.services__top-after {
+  height: 45px;
+  display: none; }
+
+.services__item:hover .services__top-inner {
+  background: linear-gradient(-43deg, #ffca01 0%, #ff8200 100%); }
+  .services__item:hover .services__top-inner .services__top-before {
+    display: none; }
+  .services__item:hover .services__top-inner .services__top-after {
+    display: inline; }
 
 .services__button:hover,
 .services__button:active {
@@ -8219,7 +8233,9 @@ label {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("../img/footer__background-big.png");
+  background-image: url("../img/footer__background-big.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   height: 1330px;
   width: 100%; }
 
