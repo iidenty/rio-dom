@@ -617,9 +617,19 @@ label {
   width: 100%;
 }
 
+@media screen and (max-device-width: 1199px) {
+  .footer__content {
+    padding-top: 40px;
+  }
+}
+
 @media screen and (max-device-width: 767px) {
   .footer__container {
     height: auto;
     background: black;
+  }
+
+  .footer__content {
+    padding-top: 10px;
   }
 }
