@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8144,6 +8145,7 @@ label {
 .support__inner {
   padding: 50px;
   border-radius: 150px;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.27); }
 
 .support img {
@@ -8172,3 +8174,56 @@ label {
 
 .support__input:active {
   outline: none; }
+
+.footer {
+  margin-top: 130px;
+  text-transform: uppercase; }
+
+.footer__container {
+  opacity: 0.83;
+  padding-top: 60px;
+  background: url("../img/footer__background.png");
+  min-height: 200px;
+  background-size: 100% 100%; }
+
+.footer__head {
+  font-size: 1.3em;
+  color: #ffad0d;
+  height: 37px;
+  max-height: 37px; }
+
+.footer__content {
+  padding-top: 20px;
+  text-transform: uppercase;
+  /* Text style for "Ремонт офи" */
+  color: #ffffff; }
+
+.footer__content-one {
+  line-height: 33.13px; }
+
+.footer__whatsapp {
+  color: #4caf50;
+  font-weight: bold; }
+
+.footer__viber {
+  color: #cb00ff;
+  font-weight: bold; }
+
+.footer__telegram {
+  color: #039be5;
+  font-weight: bold; }
+
+.footer__background-big {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/footer__background-big.png");
+  height: 1330px;
+  width: 100%; }
+
+@media screen and (max-device-width: 767px) {
+  .footer__container {
+    height: auto;
+    background: black; } }
