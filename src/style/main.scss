@@ -40,5 +40,8 @@
 @import "../../node_modules/bootstrap/scss/_utilities";
 @import "../../node_modules/bootstrap/scss/_print";
 
+// Подлкючение Swiper
+@import "node_modules/swiper/swiper-bundle.min";
+
 // Подключение своих SCSS файлов
 @import "my";

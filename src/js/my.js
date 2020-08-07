@@ -46,3 +46,21 @@ phones.mask('+7 (000) 000 00 00');
 $('.services__item').click(function () {
     alert('Пока нет информации')
 });
+
+//swiper
+var mySwiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',// to find the swiper-pagination you put outside of the swiper-container
+        clickable: true,
+        renderBullet: function (index, className) {
+            var slider_array = [];
+            var el = $('.swiper-container')
+            el.find('[data-name]').each(function () {
+                slider_array.push($(this).data('name'));
+            });
+
+            console.log(slider_array);
+            return '<span class="indicators__item ' + className + '"></span>';
+        }
+    },
+})

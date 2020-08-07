@@ -189,7 +189,7 @@ label {
   opacity: 0.47;
 }
 
-.indicators__item {
+.gallery .indicators__item {
   display: block;
   margin-right: 10px;
   opacity: 0.46;
@@ -406,8 +406,28 @@ label {
 }
 
 // reviews
-.reviews {
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
 
+.swiper-pagination {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-pagination:before {
+  content: 'ПОДРОБНЕЕ ';
+  color: #838181;
+  font-size: calc(16px + 0.3vw);
+}
+
+.reviews img {
+  max-height: 400px;
+  //height: 100%;
 }
 
 .reviews__container {
@@ -463,6 +483,15 @@ label {
 }
 
 .reviews__indicators .indicators__item {
+  width: 17px !important;
+  height: 8px !important;
+  min-height: 8px;
+  margin: 0;
+  border-radius: 3px;
+  background: linear-gradient(to top, #ff7200 0%, #ffba00 100%);
+}
+
+.reviews .indicators__item {
   width: 17px !important;
   height: 8px !important;
   min-height: 8px;
