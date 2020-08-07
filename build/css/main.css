@@ -8102,7 +8102,8 @@ label {
 
 .reviews__indicators .indicators__item {
   width: 17px !important;
-  height: 4px !important;
+  height: 8px !important;
+  min-height: 8px;
   margin: 0;
   border-radius: 3px;
   background: linear-gradient(to top, #ff7200 0%, #ffba00 100%); }
