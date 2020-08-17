@@ -4,6 +4,11 @@
   src: url("../fonts/PF Din Text Comp Pro.ttf");
 }
 
+@font-face {
+  font-family: "Muller Bold";
+  src: url("../fonts/Muller Bold.ttf");
+}
+
 html, body {
   //cursor: url("../img/cursor.png"), auto;
   overflow-x: hidden;
@@ -16,6 +21,69 @@ body {
 
 label {
   display: block;
+}
+
+// pulse
+.pulse-container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.pulse{
+
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%,-50%);
+  //width: 80px;
+  //height: 80px;
+  //background: #58aa00;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 88px;
+}
+
+.pulse:before,
+.pulse:after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 100;
+  border: 50%;
+  border: 1px solid #ffc414;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 2s linear infinite;
+  opacity: 0;
+  background-visibility: hidden;
+
+}
+
+
+.pulse:after{
+  animation-delay:1s;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  //50%{
+  //  opacity: 1;
+  //}
+  50% {
+    opacity: 1;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 // btn-orange
@@ -128,11 +196,135 @@ label {
   z-index: 5;
 }
 .intro__container {
+  height: 110vh;
   z-index: 10;
-  background-image: url("../img/intro__background.png");
-  background-size: 100% 100%;
+  background-image: url("../img/intro__background-new.png");
+  //background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 600px;
+  background-position: center bottom;
+  min-height: 710px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__calc-img {
+  position: relative;
+  z-index: 10;
+  height: 58px;
+}
+
+.intro__messenger {
+  height: 20px;
+  width: 20px;
+}
+
+.intro__calc-text {
+  position: relative;
+  left: -40px;
+  padding: 5px 10px 5px 35px;
+  border-radius: 22px;
+  border: 1px solid #ff8200;
+}
+
+.intro__phone {
+  font-size: 1.5em;
+}
+
+.intro__phone-indicator {
+  position: absolute;
+  top: -0.75em;
+  right: -1em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.intro__head {
+  padding-top: 30px;
+}
+
+.intro__center {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.intro__light {
+  background-image: url("../img/intro__light.png");
+}
+
+.intro__title div {
+  color: transparent;
+  -webkit-background-clip: text;
+  //background-clip: text;
+  background-image: linear-gradient(170deg, rgba(255,255,255,1) 0%, rgba(255,210,39,1) 35%, rgba(255,130,0,1) 65%, rgba(255,255,255,1) 100%);
+  font-weight: bold;
+  text-align: center;
+  font-size: 4.5em;
+  line-height: 1;
+}
+
+.intro__item {
+  width: 140px;
+  height: fit-content;
+  border-radius: 19px;
+  padding: 10px 20px;
+  border: 1px solid #ababab;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+.intro__btn {
+  position: relative;
+  z-index: 228;
+  padding: 10px 30px;
+  font-size: 1em;
+  //font-weight: bold;
+  text-shadow: 0 2px 1px rgba(189, 132, 38, 0.65);
+  color: #412626;
+  font-family: "Muller Bold", sans-serif;
+  border: 0;
+  outline-style: none !important;
+  box-shadow: inset 0 0 4px #ffa438;
+  border-radius: 5px;
+  background-image: linear-gradient(-18deg, #ffd9a3 0%, #ffcc33 100%);
+  border-bottom: 3px solid #d38a23;
+}
+
+.intro__btn:active,
+.intro__btn:hover, {
+  outline-style: none !important;
+}
+
+.intro__btn:active {
+  border: none;
+  margin-top: 3px;
+}
+
+//.intro__drop {
+//  display: block;
+//  background-image: url("../img/intro__drop.png");
+//  width: 100%;
+//  height: 316px;
+//}
+.intro__btn-container {
+  margin-top: 5em;
+}
+
+.intro__bottom {
+  margin-bottom: 5em;
+}
+
+.intro__title-top {
+  font-size: 1.5em;
+}
+
+@media screen and (max-device-width: 991px) {
+  .intro__title div {
+    font-size: 3.6em;
+  }
 }
 
 // gallery
@@ -166,7 +358,7 @@ label {
 
 .gallery__text {
   font-family: "PF Din Text Comp Pro", sans-serif;
-  color: #ffffff;
+  //color: #ffffff;
   font-size: calc(16px + 0.7vw);
 }
 
@@ -217,7 +409,8 @@ label {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url('../img/gallery_1_with_dark_with_line.png');
+  //background-image: url('../img/gallery_1_with_dark_with_line.png');
+  background-image: url('../img/gallery__background-white.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;

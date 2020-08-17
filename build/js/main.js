@@ -18700,6 +18700,9 @@ var mySwiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',// to find the swiper-pagination you put outside of the swiper-container
         clickable: true,
+        autoplay: {
+            delay: 5000,
+        },
         renderBullet: function (index, className) {
             var slider_array = [];
             var el = $('.swiper-container')
