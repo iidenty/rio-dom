@@ -12,7 +12,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main.css?v=db5f867371b06da85baf3bdd3e529fc2" rel="stylesheet" />
     
     <title>Home</title>
 </head>
@@ -99,44 +99,64 @@
 <!--</div>-->
 
 <section class="gallery">
-    <div class="gallery__container screen">
+    <div class="gallery__container position-relative screen">
         <div class="gallery__background"></div>
+        <div style="top: 0; bottom: 0; right: 0; left: 0;" class="gallery__background-container position-absolute">
+<!--            <img class="gallery__slide" src="img/gallery_1.jpg" alt="">-->
+            <div class="w-100 h-100 swiper-container-2 swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gallery_1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gallery_2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gallery_3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="gallery__gradient"></div>
-        <div class="gallery__inner">
-            <div class="container">
+        <div class="gallery__inner text-center text-md-left">
+            <div class="container" style="z-index: 1000">
                 <div class="row">
                     <div class="offset-md-1 col-md-6">
                         <div class="gallery__header header-1 pb-4 text-uppercase text-orange">От голых стен – до <br>готового ремонта</div>
-                        <div class="gallery__text pb-4">
+                        <div class="gallery__text pl-4 pr-4 pl-md-0 pr-md-0 pb-4">
                             Хотите жить в квартире с уникальным интерьером?
                         </div>
-                        <div class="gallery__text pb-4">
+                        <div class="gallery__text pl-4 pr-4 pl-md-0 pr-md-0 pb-4">
                             Дизайн-проект – это возможность получить уникальный интерьер от именитых дизайнеров. Ваши желания в точности реализуются любой профессиональной бригадой благодаря детальным планам, макетам и подробным инструкциям.
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="offset-md-1 col-md-6">
+                    <div class="offset-md-1 col-md-6 d-none d-md-block">
                         <div class="gallery__toggle text-uppercase">Смотреть до / после</div>
                     </div>
                     <div class="col-md-4">
-                        <div class="gallery__slider">
-                            <div class="gallery__indicators">
-                                <div class="indicators__item indicators__item_active"></div>
-                                <div class="indicators__item"></div>
-                                <div class="indicators__item"></div>
-                                <div class="indicators__item"></div>
+                        <div class="gallery__slider pl-4 pr-4 pl-md-0 pr-md-0">
+                            <div class="gallery__indicators align-items-center">
+                                <div class="gallery__indicators swiper-pagination-2"></div>
+<!--                                <div class="indicators__item indicators__item_active"></div>-->
+<!--                                <div class="indicators__item"></div>-->
+<!--                                <div class="indicators__item"></div>-->
+<!--                                <div class="indicators__item"></div>-->
 
                                 <div class="indicators__line"></div>
+                                <a id="gallery-next" class="gallery__down-arrow">
+                                    <img class="img-fluid" src="img/gallery__down-arrow.png" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="gallery__house d-none d-md-block">
-            <img src="img/gallery__house.png" alt="">
-        </div>
+<!--        <div class="gallery__house d-none d-md-block">-->
+<!--            <img src="img/gallery__house.png" alt="">-->
+<!--        </div>-->
     </div>
 </section>
 
@@ -389,7 +409,7 @@
                 <div class="col-md-10 offset-1">
                     <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -405,7 +425,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -421,7 +441,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -437,7 +457,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -453,7 +473,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -469,7 +489,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-swiper-autoplay="2000">
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
@@ -754,6 +774,6 @@
 
     </div>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=db5f867371b06da85baf3bdd3e529fc2"></script>
 </body>
 </html>
