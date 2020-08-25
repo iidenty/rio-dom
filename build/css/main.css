@@ -8741,7 +8741,7 @@ input {
 
 .include-price__container {
   background: url("../img/include-price__background-new.png") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   min-height: 400px;
   height: 50vh;
@@ -8807,7 +8807,7 @@ input {
     padding-top: 150px;
     padding-bottom: 100px;
     background: url("../img/include-price__bakcground-mobile.png") no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center; } }
 
 @media screen and (max-device-width: 991px) {
