@@ -8725,6 +8725,7 @@ label {
 @media screen and (max-device-width: 767px) {
   .calc__input-number {
     border: 1px solid #ffc800;
+    padding-right: 0;
     border-radius: 23px;
     margin: 0;
     width: 100%; }
