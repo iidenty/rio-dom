@@ -981,20 +981,22 @@ label {
 .footer__container {
   opacity: 0.83;
   padding-top: 60px;
-  background: url('../img/footer__background.png');
+  background: url('../img/footer__background.png') no-repeat;
+  background-position: top center;
+  background-size: cover;
   min-height: 200px;
-  background-size: 100% 100%;
+  //background-size: 100% 100%;
 }
 
 .footer__head {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #ffad0d;
   height: 37px;
   max-height: 37px;
 }
 
 .footer__content {
-  padding-top: 20px;
+  padding-top: 45px;
   text-transform: uppercase;
   /* Text style for "Ремонт офи" */
   //letter-spacing: 9.55px;
@@ -1036,14 +1038,15 @@ label {
 
 @media screen and (max-device-width: 1199px) {
   .footer__content {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 }
 
 @media screen and (max-device-width: 767px) {
   .footer__container {
+    padding-top: 100px;
     height: auto;
-    background: black;
+    //background: black;
   }
 
   .footer__content {

@@ -39,7 +39,10 @@ phones.on("focus", function () {
 });
 
 phones.on("blur", function () {
-    phones.attr("placeholder", "НОМЕР ТЕЛЕФОНА")
+    phones.attr("placeholder", "НОМЕР ТЕЛЕФОНА");
+    if (phones.val() === '+7 (') {
+        phones.val('')
+    }
 });
 
 
