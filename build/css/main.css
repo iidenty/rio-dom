@@ -8917,6 +8917,20 @@ label {
   display: -ms-flexbox;
   display: flex; }
 
+.services .swiper-slide-active b .services__content {
+  margin-bottom: 0; }
+
+.services .swiper-slide-active b .services__button {
+  display: -ms-flexbox;
+  display: flex; }
+
+.services .swiper-slide-active b .services__top-inner {
+  background: linear-gradient(-43deg, #ffca01 0%, #ff8200 100%); }
+  .services .swiper-slide-active b .services__top-inner .services__top-before {
+    display: none; }
+  .services .swiper-slide-active b .services__top-inner .services__top-after {
+    display: inline; }
+
 .services__item:hover .services__content {
   margin-bottom: 0; }
 

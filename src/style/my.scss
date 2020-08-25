@@ -783,6 +783,15 @@ label {
   margin-top: 120px;
 }
 
+.services .swiper-slide-next {
+
+  //margin-right: 35%;
+}
+
+.services .swiper-slide{
+
+}
+
 .services__container .container {
   margin-top: 80px;
 }
@@ -796,6 +805,25 @@ label {
 
 .services__item:hover .services__button {
   display: flex;
+
+}
+
+.services .swiper-slide-active b {
+  .services__content {
+    margin-bottom: 0;
+  }
+  .services__button {
+    display: flex;
+  }
+  .services__top-inner {
+    background: linear-gradient(-43deg, rgba(255, 202, 1, 1) 0%, rgba(255, 130, 0, 1) 100%);
+    .services__top-before {
+      display: none;
+    }
+    .services__top-after {
+      display: inline;
+    }
+  }
 }
 
 .services__item:hover .services__content {

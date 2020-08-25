@@ -18695,7 +18695,7 @@ phones.on("blur", function () {
 phones.mask('+7 (000) 000 00 00');
 
 $('.services__item').click(function () {
-    alert('Пока нет информации')
+    // alert('Пока нет информации')
 });
 
 //swiper
@@ -18747,6 +18747,23 @@ var mySwiper2 = new Swiper('.swiper-container-2', {
             return '<span class="indicators__item ' + className + '"></span>';
         }
     },
+});
+
+var mySwiper3 = new Swiper('.services__swiper-container', {
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+    grabCursor: true,
+    breakpoints: {
+        345: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+        },
+        425: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+    }
 });
 
 $("#gallery-next").click(function () {
