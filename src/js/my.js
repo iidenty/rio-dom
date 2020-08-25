@@ -56,6 +56,7 @@ var mySwiper = new Swiper('.swiper-container', {
     autoplay: {
         delay: 100,
     },
+    spaceBetween: 100,
     // loop: true,
     pagination: {
         el: '.swiper-pagination',// to find the swiper-pagination you put outside of the swiper-container

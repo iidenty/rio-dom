@@ -12,7 +12,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=db5f867371b06da85baf3bdd3e529fc2" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     
     <title>Home</title>
 </head>
@@ -171,9 +171,12 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="offset-md-1 col-md-10">
-                    <div class="calc__header text-center text-uppercase text-dark header-1">калькулятор</div>
-                    <div class="calc__description text-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
-
+                    <div class="row">
+                        <div class="col-8 col-md-12">
+                            <div class="calc__header text-md-center text-uppercase text-dark header-1">калькулятор</div>
+                            <div class="calc__description text-md-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
+                        </div>
+                    </div>
                     <div class="row mt-4">
                         <div class="col-md-4 col-6 mt-5 pt-1">
                             <div class="calc__item">
@@ -314,20 +317,20 @@
                     </div>
                 </div>
             <div class="row text-center mt-5">
-                <div class="col-md-10 offset-md-1 row">
-                    <div class="col-md pl-md-0 pb-3 pb-md-0">
-                        <input autocomplete="off" type="text" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА">
-                    </div>
-                    <div class="col-md pb-3 pb-md-0">
-                        <button class="h-100 btn-orange text-uppercase w-100 btn-animate">получить расчет по смс</button>
-                    </div>
-                    <div class="col-md">
-                        <div class="form-check text-left">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label text-uppercase" for="defaultCheck1">
-                                я принимаю условия
-                                пользовательского соглашения
-                            </label>
+                <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-6 pl-md-0 pb-3 pb-md-0 pr-md-0">
+                            <input autocomplete="off" type="text" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА">
+                        </div>
+                        <div class="col-md-6 pb-3 pb-md-0 pl-md-0">
+                            <button class="h-100 btn-orange calc__btn text-uppercase w-100">получить расчет по смс</button>
+                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 pt-md-3">
+                            <div class="text-center calc__usloviya">
+                                я принимаю условия <br>
+                                <span style="text-decoration: underline">пользовательского соглашения</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -341,13 +344,14 @@
         <div class="include-price__inner">
             <div class="w-100">
                 <div class="include-price__title">
-                    Что входит в стоимость?
+                    <span class="d-block d-md-inline">Что входит</span>
+                    <span class="d-block d-md-inline">в стоимость?</span>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="offset-1 col-md-10">
                             <div class="row">
-                                <div class="col-md">
+                                <div class="col-md d-flex align-content-center">
                                     <div class="include-price__item">
                                         <div class="include-price__header header-2">Подготовительный этап</div>
                                         <div class="include-price__content">
@@ -359,7 +363,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md">
+                                <div class="col-md d-flex align-content-center">
                                     <div class="include-price__item">
                                         <div class="include-price__header header-2">Основной этап</div>
                                         <div class="include-price__content">
@@ -371,7 +375,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md">
+                                <div class="col-md d-flex align-content-center">
                                     <div class="include-price__item">
                                         <div class="include-price__header header-2">Дополнительный этап</div>
                                         <div class="include-price__content">
@@ -406,101 +410,113 @@
         </div>
         <div class="reviews__items container">
             <div class="row">
-                <div class="col-md-10 offset-1">
+                <div class="col-md-10 offset-1 col-10">
                     <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-autoplay="2000">
-                                <div class="row">
-                                    <div class="col-4">
+                                <div class="row text-center text-md-left">
+                                    <div class="col-md-4">
                                         <img src="img/reviews__1.png" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8">
                                         <div class="reviews__item-container">
-                                            <div class="reviews__head header-1">ЛИНА РОМАН</div>
+                                            <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="d-none d-md-flex swiper-pagination"></div>
+                                            <div class="reviews__info d-block d-md-none pt-3">ПОДРОБНЕЕ</div>
                                         </div>
                                     </div>
                                 </div>
@@ -774,6 +790,6 @@
 
     </div>
 </footer>
-<script src="js/main.js?v=db5f867371b06da85baf3bdd3e529fc2"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
