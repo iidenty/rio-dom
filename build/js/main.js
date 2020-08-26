@@ -18706,8 +18706,9 @@ var mySwiper = new Swiper('.swiper-container', {
     // slidesPerView: 1,
     // spaceBetween: 30,
     autoplay: {
-        delay: 100,
+        delay: 5000,
     },
+    speed: 700,
     spaceBetween: 100,
     // loop: true,
     pagination: {
