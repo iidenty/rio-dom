@@ -18729,8 +18729,56 @@ mySwiper.autoplay.start();
 // mySwiper.swipeNext(true, true);
 // mySwiper.startAutoplay(); //just in case
 
+updateValueCalcFolder();
+
+$(".calc input").click(function (e) {
+    updateValueCalcFolder()
+})
+
+function formatMoney(n, c, d, t) {
+    var c = isNaN(c = Math.abs(c)) ? 2 : c,
+        d = d == undefined ? "." : d,
+        t = t == undefined ? "," : t,
+        s = n < 0 ? "-" : "",
+        i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+        j = (j = i.length) > 3 ? j % 3 : 0;
+
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
+
+function isEmpty(str) {
+    return (typeof str === "undefined" || str === null || str ===  "");
+}
+
+function updateValueCalcFolder() {
+    let elem = $(".calc__folder-value");
+    let items = $(".calc input:radio:checked");
+    let sum = 0;
+
+    for (let i = 0; i < items.length; i++) {
+        sum += $(items[i]).data('price');
+    }
+
+    let rooms = $(".calc input[name='rooms']").val();
+    let s = $(".calc input[name='area']").val();
+
+    if (isEmpty(rooms)) { rooms = 0 }
+    if (isEmpty(s)) { s = 0 }
+
+    sum += rooms * 10000;
+    sum += s * 400;
+
+    // sum = sum.toString()
+
+    elem.text(formatMoney(sum, "", "", "."))
+}
+
+$(".calc input[name='rooms'], .calc input[name='area']").on('blur', function () {
+    updateValueCalcFolder()
+})
+
 //swiper
-var mySwiper2 = new Swiper('.swiper-container-2', {
+let mySwiper2 = new Swiper('.swiper-container-2', {
     // slidesPerView: 1,
     // spaceBetween: 30,
     autoplay: {

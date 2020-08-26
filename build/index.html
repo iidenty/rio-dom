@@ -172,9 +172,16 @@
             <div class="row">
                 <div class="offset-md-1 col-md-10">
                     <div class="row">
-                        <div class="col-8 col-md-12">
-                            <div class="calc__header text-md-center text-uppercase text-dark header-1">калькулятор</div>
-                            <div class="calc__description text-md-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
+                        <div class="col-12 col-md-12">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="calc__header text-md-center text-uppercase text-dark header-1">калькулятор</div>
+                                    <div class="calc__description text-md-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
+                                </div>
+                                <div class="col d-block d-md-none text-center">
+                                    <img style="bottom: -14px;" class="position-relative img-fluid" src="img/calc__folder-mobile.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row mt-4">
@@ -184,29 +191,29 @@
                                 <div class="item__content row">
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="type" class="custom-control-input" checked>
+                                            <input data-price="100000" type="radio" id="customRadio1" name="type" class="custom-control-input" checked>
                                             <label class="custom-control-label" for="customRadio1">КВАРТИРА</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio" name="type" class="custom-control-input">
+                                            <input data-price="110000" type="radio" id="customRadio" name="type" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio">РЕСТОРАН</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio3" name="type" class="custom-control-input">
+                                            <input data-price="120000" type="radio" id="customRadio3" name="type" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio3">МАГАЗИН</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio4" name="type" value="storage" class="custom-control-input">
+                                            <input data-price="130000" type="radio" id="customRadio4" name="type" value="storage" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio4">СКЛАД</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio5" name="type" value="office" class="custom-control-input">
+                                            <input data-price="140000" type="radio" id="customRadio5" name="type" value="office" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio5">ОФИС</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio6" name="type" value="house" class="custom-control-input">
+                                            <input data-price="150000" type="radio" id="customRadio6" name="type" value="house" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio6">ДОМ</label>
                                         </div>
                                     </div>
@@ -218,19 +225,19 @@
                                 <div class="item__header text-uppercase header-2">Вид ремонта</div>
                                 <div class="item__content">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio7" name="repairs" value="cosmetic" class="custom-control-input">
+                                        <input data-price="10000" type="radio" id="customRadio7" name="repairs" value="cosmetic" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio7">КОСМЕТИЧЕСКИЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio8" name="repairs" value="designer" class="custom-control-input">
+                                        <input data-price="21000" type="radio" id="customRadio8" name="repairs" value="designer" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio8">ДИЗАЙНЕРСКИЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio9" name="repairs" value="capital" class="custom-control-input">
+                                        <input data-price="22000" type="radio" id="customRadio9" name="repairs" value="capital" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio9">КАПИТАЛЬНЫЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio10" name="repairs" value="full" checked class="custom-control-input">
+                                        <input data-price="43000" type="radio" id="customRadio10" name="repairs" value="full" checked class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio10">ПОД КЛЮЧ</label>
                                     </div>
                                 </div>
@@ -242,13 +249,13 @@
                                 <div class="item__content row">
                                     <div class="col-md">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio11" name="view" value="old_building" checked class="custom-control-input">
+                                            <input data-price="30000" type="radio" id="customRadio11" name="view" value="old_building" checked class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio11">ПОД КЛЮЧ</label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio12" name="view" value="new_building" class="custom-control-input">
+                                            <input data-price="21000" type="radio" id="customRadio12" name="view" value="new_building" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio12">НОВОСТРОЙКА</label>
                                         </div>
                                     </div>
@@ -261,13 +268,13 @@
                                 <div class="item__content row">
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio13" name="redevelopment" value="1" checked class="custom-control-input">
+                                            <input data-price="32000" type="radio" id="customRadio13" name="redevelopment" value="1" checked class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio13">ДА</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio14" name="redevelopment" value="0" class="custom-control-input">
+                                            <input data-price="13000" type="radio" id="customRadio14" name="redevelopment" value="0" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio14">НЕТ</label>
                                         </div>
                                     </div>
@@ -280,22 +287,31 @@
                                 <div class="item__content row">
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio15" name="alignment" value="1" checked class="custom-control-input">
+                                            <input data-price="24000" type="radio" id="customRadio15" name="alignment" value="1" checked class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio15">ДА</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio16" name="alignment" value="0" class="custom-control-input">
+                                            <input data-price="15000" type="radio" id="customRadio16" name="alignment" value="0" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio16">НЕТ</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-6 mt-5 pt-1">
+                        <div class="col-md-4 col-6 mt-5 pt-1 d-none d-md-block">
 <!--                            картинка :)-->
-<!--                            <img class="img-fluid" src="img/calc__book.png" alt="">-->
+                            <div class="calc__folder-container-pc">
+                                <div class="calc__folder">
+                                    <img src="img/calc__book.png" alt="">
+                                    <div class="calc__folder-text">
+                                        <span class="calc__folder-value">100.000</span>
+                                        <span class="calc__folder-last">РУБЛЕЙ</span>
+                                    </div>
+<!--                                    <div class="calc__stick"></div>-->
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 mt-5 pt-1">
                             <div class="calc__item">

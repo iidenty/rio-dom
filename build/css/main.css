@@ -8428,7 +8428,7 @@ input {
 
 .header-2 {
   font-family: "PF Din Text Comp Pro", sans-serif;
-  font-size: calc(1.3em + 0.4vw);
+  font-size: calc(1.3em);
   font-weight: 600; }
 
 .intro {
@@ -8676,12 +8676,47 @@ input {
 
 .calc__input-text {
   text-align: center;
+  font-family: "PF Din Text Comp Pro", sans-serif;
   width: 40px;
   height: 30px;
   border: none;
   border-bottom: 2px solid #ff8200;
   background: none;
   outline: none; }
+
+.calc__stick {
+  position: absolute;
+  background: url("../img/calc__stick.png") no-repeat;
+  background-size: contain;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -300px; }
+
+.calc__folder-container-pc {
+  position: relative;
+  margin-top: -120px; }
+
+.calc__folder img {
+  height: auto;
+  width: 360px; }
+
+.calc__folder-text {
+  width: 130px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 40px;
+  left: 61px;
+  -webkit-transform: rotateX(62deg) rotateZ(19deg);
+          transform: rotateX(62deg) rotateZ(19deg);
+  color: #ff8200; }
+
+.calc__folder-last {
+  padding-left: 4px; }
 
 .calc__input-number {
   outline: none;
@@ -8807,7 +8842,7 @@ input {
     padding-top: 150px;
     padding-bottom: 100px;
     background: url("../img/include-price__bakcground-mobile.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center; } }
 
 @media screen and (max-device-width: 991px) {
