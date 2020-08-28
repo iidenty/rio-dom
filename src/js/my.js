@@ -32,16 +32,31 @@
 // });
 
 let phones = $('.phone');
+let phone1 = $(".calc .phone");
+let phone2 = $(".support .phone");
 
 phones.on("focus", function () {
     phones.attr("placeholder", "");
-    phones.val('+7 (');
+
+    if (phone1.val() === '') {
+        phone1.val('+7 (');
+    }
+
+    if (phone2.val() === '') {
+        phone2.val('+7 (');
+    }
 });
 
 phones.on("blur", function () {
-    phones.attr("placeholder", "НОМЕР ТЕЛЕФОНА");
-    if (phones.val() === '+7 (') {
-        phones.val('')
+    phone1.attr("placeholder", "НОМЕР ТЕЛЕФОНА")
+    phone2.attr("placeholder", "номер телефона")
+
+    if (phone1.val() === '+7 (') {
+        phone1.val('')
+    }
+
+    if (phone2.val() === '+7 (') {
+        phone2.val('')
     }
 });
 
