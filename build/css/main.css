@@ -8670,6 +8670,9 @@ input {
 .calc {
   position: relative; }
 
+.calc .item__header {
+  padding-left: 23px; }
+
 .calc__container {
   position: relative;
   z-index: 99;
@@ -8688,6 +8691,9 @@ input {
   border-bottom: 2px solid #ff8200;
   background: none;
   outline: none; }
+
+.calc__item {
+  position: relative; }
 
 .calc__stick {
   position: absolute;
@@ -8801,7 +8807,7 @@ input {
 
 .include-price__container {
   background: url("../img/include-price__background-new.png") no-repeat;
-  background-size: auto 100% !important;
+  background-size: 100% 100% !important;
   background-position: center;
   min-height: 400px;
   height: 50vh;

@@ -18841,7 +18841,7 @@ var mySwiper4 = new Swiper('.calc__swiper-container', {
     allowTouchMove: false,
     centeredSlides: true,
     slidesPerView: 1,
-    spaceBetween: -10,
+    spaceBetween: -30,
     grabCursor: true,
     // breakpoints: {
     //     345: {
