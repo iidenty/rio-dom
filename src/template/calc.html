@@ -6,46 +6,228 @@
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="row">
-                                <div class="col">
-                                    <div class="calc__header text-md-center text-uppercase text-dark header-1">калькулятор</div>
-                                    <div class="calc__description text-md-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ РЕМОНТА В НЕСКОЛЬКО КЛИКОВ</div>
+                                <div class="col-7">
+                                    <div class="calc__header text-md-center text-uppercase text-dark header-1">
+                                        калькулятор
+                                    </div>
+                                    <div class="calc__description text-md-center text-uppercase">РАССЧИТАТЬ СТОИМОСТЬ
+                                        РЕМОНТА В НЕСКОЛЬКО КЛИКОВ
+                                    </div>
                                 </div>
-                                <div class="col d-block d-md-none text-center">
-                                    <img style="bottom: -14px;" class="position-relative img-fluid" src="img/calc__folder-mobile.png" alt="">
+                                <div class="col-5 d-block d-md-none text-center">
+                                    <img alt="" class="position-relative img-fluid"
+                                         src="img/calc__folder-mobile.png" style="bottom: -14px;">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-4">
+
+                    <!-- Версия для телефонов -->
+                    <div class="mt-3 d-block d-md-none">
+                        <div class="calc__swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <div class="item__header text-uppercase header-2">Тип помещения</div>
+                                        <div class="item__content d-flex">
+                                            <div class="mr-3">
+                                                <div class="custom-control custom-radio">
+                                                    <input checked class="custom-control-input" data-price="100000"
+                                                           id="customRadio1-p" name="type" type="radio">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio1-p">КВАРТИРА</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="110000" id="customRadio-p"
+                                                           name="type" type="radio">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio-p">РЕСТОРАН</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="120000" id="customRadio3-p"
+                                                           name="type" type="radio">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio3-p">МАГАЗИН</label>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="130000" id="customRadio4-p"
+                                                           name="type" type="radio" value="storage">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio4-p">СКЛАД</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="140000" id="customRadio5-p"
+                                                           name="type" type="radio" value="office">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio5-p">ОФИС</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="150000" id="customRadio6-p"
+                                                           name="type" type="radio" value="house">
+                                                    <label class="custom-control-label" for="customRadio6-p">ДОМ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <div class="item__header text-uppercase header-2">Вид ремонта</div>
+                                        <div class="item__content">
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" data-price="10000" id="customRadio7-p"
+                                                       name="repairs" type="radio" value="cosmetic">
+                                                <label class="custom-control-label"
+                                                       for="customRadio7-p">КОСМЕТИЧЕСКИЙ</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" data-price="21000" id="customRadio8-p"
+                                                       name="repairs" type="radio" value="designer">
+                                                <label class="custom-control-label"
+                                                       for="customRadio8-p">ДИЗАЙНЕРСКИЙ</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" data-price="22000" id="customRadio9-p"
+                                                       name="repairs" type="radio" value="capital">
+                                                <label class="custom-control-label"
+                                                       for="customRadio9-p">КАПИТАЛЬНЫЙ</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input checked class="custom-control-input" data-price="43000"
+                                                       id="customRadio10-p" name="repairs" type="radio" value="full">
+                                                <label class="custom-control-label" for="customRadio10-p">ПОД
+                                                    КЛЮЧ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <div class="item__header text-uppercase header-2">Вид помещения</div>
+                                        <div class="item__content row">
+                                            <div class="col-md">
+                                                <div class="custom-control custom-radio">
+                                                    <input checked class="custom-control-input" data-price="30000"
+                                                           id="customRadio11-p" name="view" type="radio"
+                                                           value="old_building">
+                                                    <label class="custom-control-label" for="customRadio11-p">ПОД
+                                                        КЛЮЧ</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="21000" id="customRadio12-p"
+                                                           name="view" type="radio"
+                                                           value="new_building">
+                                                    <label class="custom-control-label" for="customRadio12-p">НОВОСТРОЙКА</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <div class="item__header text-uppercase header-2">Перепланировка</div>
+                                        <div class="item__content row">
+                                            <div class="col-6">
+                                                <div class="custom-control custom-radio">
+                                                    <input checked class="custom-control-input" data-price="32000"
+                                                           id="customRadio13-p" name="redevelopment" type="radio"
+                                                           value="1">
+                                                    <label class="custom-control-label" for="customRadio13-p">ДА</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="13000" id="customRadio14-p"
+                                                           name="redevelopment" type="radio" value="0">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio14-p">НЕТ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <div class="item__header text-uppercase header-2">Выравнивание стен</div>
+                                        <div class="item__content row">
+                                            <div class="col-6">
+                                                <div class="custom-control custom-radio">
+                                                    <input checked class="custom-control-input" data-price="24000"
+                                                           id="customRadio15-p" name="alignment" type="radio"
+                                                           value="1">
+                                                    <label class="custom-control-label" for="customRadio15-p">ДА</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" data-price="15000" id="customRadio16-p"
+                                                           name="alignment" type="radio" value="0">
+                                                    <label class="custom-control-label"
+                                                           for="customRadio16-p">НЕТ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="calc__item">
+                                        <label class="item__header header-2 text-uppercase">
+                                            кол-во комнат
+                                            <input class="calc__input-text" name="rooms" type="text">
+                                        </label>
+                                        <label class="item__header header-2 text-uppercase">
+                                            площадь помещения
+                                            <input class="calc__input-text" name="area" type="text">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button mt-3">
+                                <button class="calc__btn-slide calc__btn-prev">Назад</button>
+                                <button class="calc__btn-slide calc__btn-next">
+                                    <img class="img-fluid" src="img/calc__btn-down-arrow.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Версия для ПК -->
+                    <div class="row mt-4 d-none d-md-flex">
                         <div class="col-md-4 col-6 mt-5 pt-1">
                             <div class="calc__item">
                                 <div class="item__header text-uppercase header-2">Тип помещения</div>
                                 <div class="item__content row">
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="100000" type="radio" id="customRadio1" name="type" class="custom-control-input" checked>
+                                            <input checked class="custom-control-input" data-price="100000" id="customRadio1"
+                                                   name="type" type="radio">
                                             <label class="custom-control-label" for="customRadio1">КВАРТИРА</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input data-price="110000" type="radio" id="customRadio" name="type" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="110000" id="customRadio" name="type"
+                                                   type="radio">
                                             <label class="custom-control-label" for="customRadio">РЕСТОРАН</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input data-price="120000" type="radio" id="customRadio3" name="type" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="120000" id="customRadio3" name="type"
+                                                   type="radio">
                                             <label class="custom-control-label" for="customRadio3">МАГАЗИН</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="130000" type="radio" id="customRadio4" name="type" value="storage" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="130000" id="customRadio4" name="type"
+                                                   type="radio" value="storage">
                                             <label class="custom-control-label" for="customRadio4">СКЛАД</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input data-price="140000" type="radio" id="customRadio5" name="type" value="office" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="140000" id="customRadio5" name="type"
+                                                   type="radio" value="office">
                                             <label class="custom-control-label" for="customRadio5">ОФИС</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input data-price="150000" type="radio" id="customRadio6" name="type" value="house" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="150000" id="customRadio6" name="type"
+                                                   type="radio" value="house">
                                             <label class="custom-control-label" for="customRadio6">ДОМ</label>
                                         </div>
                                     </div>
@@ -57,19 +239,23 @@
                                 <div class="item__header text-uppercase header-2">Вид ремонта</div>
                                 <div class="item__content">
                                     <div class="custom-control custom-radio">
-                                        <input data-price="10000" type="radio" id="customRadio7" name="repairs" value="cosmetic" class="custom-control-input">
+                                        <input class="custom-control-input" data-price="10000" id="customRadio7" name="repairs"
+                                               type="radio" value="cosmetic">
                                         <label class="custom-control-label" for="customRadio7">КОСМЕТИЧЕСКИЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input data-price="21000" type="radio" id="customRadio8" name="repairs" value="designer" class="custom-control-input">
+                                        <input class="custom-control-input" data-price="21000" id="customRadio8" name="repairs"
+                                               type="radio" value="designer">
                                         <label class="custom-control-label" for="customRadio8">ДИЗАЙНЕРСКИЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input data-price="22000" type="radio" id="customRadio9" name="repairs" value="capital" class="custom-control-input">
+                                        <input class="custom-control-input" data-price="22000" id="customRadio9" name="repairs"
+                                               type="radio" value="capital">
                                         <label class="custom-control-label" for="customRadio9">КАПИТАЛЬНЫЙ</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input data-price="43000" type="radio" id="customRadio10" name="repairs" value="full" checked class="custom-control-input">
+                                        <input checked class="custom-control-input" data-price="43000" id="customRadio10"
+                                               name="repairs" type="radio" value="full">
                                         <label class="custom-control-label" for="customRadio10">ПОД КЛЮЧ</label>
                                     </div>
                                 </div>
@@ -81,13 +267,15 @@
                                 <div class="item__content row">
                                     <div class="col-md">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="30000" type="radio" id="customRadio11" name="view" value="old_building" checked class="custom-control-input">
+                                            <input checked class="custom-control-input" data-price="30000" id="customRadio11"
+                                                   name="view" type="radio" value="old_building">
                                             <label class="custom-control-label" for="customRadio11">ПОД КЛЮЧ</label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="21000" type="radio" id="customRadio12" name="view" value="new_building" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="21000" id="customRadio12" name="view"
+                                                   type="radio" value="new_building">
                                             <label class="custom-control-label" for="customRadio12">НОВОСТРОЙКА</label>
                                         </div>
                                     </div>
@@ -100,13 +288,15 @@
                                 <div class="item__content row">
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="32000" type="radio" id="customRadio13" name="redevelopment" value="1" checked class="custom-control-input">
+                                            <input checked class="custom-control-input" data-price="32000"
+                                                   id="customRadio13" name="redevelopment" type="radio" value="1">
                                             <label class="custom-control-label" for="customRadio13">ДА</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="13000" type="radio" id="customRadio14" name="redevelopment" value="0" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="13000" id="customRadio14"
+                                                   name="redevelopment" type="radio" value="0">
                                             <label class="custom-control-label" for="customRadio14">НЕТ</label>
                                         </div>
                                     </div>
@@ -119,13 +309,15 @@
                                 <div class="item__content row">
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="24000" type="radio" id="customRadio15" name="alignment" value="1" checked class="custom-control-input">
+                                            <input checked class="custom-control-input" data-price="24000" id="customRadio15"
+                                                   name="alignment" type="radio" value="1">
                                             <label class="custom-control-label" for="customRadio15">ДА</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="custom-control custom-radio">
-                                            <input data-price="15000" type="radio" id="customRadio16" name="alignment" value="0" class="custom-control-input">
+                                            <input class="custom-control-input" data-price="15000" id="customRadio16" name="alignment"
+                                                   type="radio" value="0">
                                             <label class="custom-control-label" for="customRadio16">НЕТ</label>
                                         </div>
                                     </div>
@@ -133,15 +325,15 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-6 mt-5 pt-1 d-none d-md-block">
-<!--                            картинка :)-->
+                            <!--                            картинка :)-->
                             <div class="calc__folder-container-pc">
                                 <div class="calc__folder">
-                                    <img src="img/calc__book.png" alt="">
+                                    <img alt="" src="img/calc__book.png">
                                     <div class="calc__folder-text">
                                         <span class="calc__folder-value">100.000</span>
                                         <span class="calc__folder-last">РУБЛЕЙ</span>
                                     </div>
-<!--                                    <div class="calc__stick"></div>-->
+                                    <!--                                    <div class="calc__stick"></div>-->
                                 </div>
                             </div>
                         </div>
@@ -149,7 +341,7 @@
                             <div class="calc__item">
                                 <label class="item__header header-2 text-uppercase">
                                     кол-во комнат
-                                    <input name="rooms" class="calc__input-text" type="text">
+                                    <input class="calc__input-text" name="rooms" type="text">
                                 </label>
                             </div>
                         </div>
@@ -157,21 +349,23 @@
                             <div class="calc__item">
                                 <label class="item__header header-2 text-uppercase">
                                     площадь помещения
-                                    <input name="area" class="calc__input-text" type="text">
+                                    <input class="calc__input-text" name="area" type="text">
                                 </label>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
+            </div>
             <div class="row text-center mt-5">
                 <div class="col-md-10 offset-md-1">
                     <div class="row">
                         <div class="col-md-6 pl-md-0 pb-3 pb-md-0 pr-md-0">
-                            <input autocomplete="off" type="text" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА">
+                            <input autocomplete="off" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА"
+                                   type="text">
                         </div>
                         <div class="col-md-6 pb-3 pb-md-0 pl-md-0">
-                            <button class="h-100 btn-orange calc__btn text-uppercase w-100">получить расчет по смс</button>
+                            <button class="h-100 btn-orange calc__btn text-uppercase w-100">получить расчет по смс
+                            </button>
                         </div>
                         <div class="col-md-6"></div>
                         <div class="col-md-6 pt-md-3">

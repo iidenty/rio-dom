@@ -8355,7 +8355,7 @@ input {
 .btn-orange {
   outline: none;
   font-family: "Muller Bold", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.05em;
   border-radius: 21px;
   background: linear-gradient(to top, #ffc414 0%, #ff8200 100%), linear-gradient(to top, #52c234 0%, #00ff2a 100%);
   color: #ffffff;
@@ -8728,7 +8728,7 @@ input {
   position: relative;
   z-index: 100;
   font-family: "Muller Medium", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.05em;
   height: 100%;
   min-height: 49px;
   border: 1px transparent;
@@ -8764,6 +8764,28 @@ input {
   box-shadow: 0 0 0 0px #fff, 0 0 0 0.2rem #ffd9b1;
   /* pink, 25% opacity */ }
 
+.calc__btn-slide {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  border: 1px solid #ff8200;
+  background-color: #f6f6f6;
+  color: #45a93b;
+  font-family: "Muller Medium", sans-serif;
+  outline: none !important;
+  outline-style: none !important; }
+
+.calc__btn-slide:last-child {
+  border-radius: 100%; }
+
+.calc__btn-slide:last-child img {
+  padding-left: 2px;
+  padding-right: 2px; }
+
+.calc .swiper-slide-next {
+  opacity: 0.6;
+  display: -ms-flexbox;
+  display: flex; }
+
 @media screen and (max-device-width: 767px) {
   .calc__input-number {
     border: 1px solid #ffc800;
@@ -8779,7 +8801,7 @@ input {
 
 .include-price__container {
   background: url("../img/include-price__background-new.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100% !important;
   background-position: center;
   min-height: 400px;
   height: 50vh;
@@ -8845,7 +8867,6 @@ input {
     padding-top: 150px;
     padding-bottom: 100px;
     background: url("../img/include-price__bakcground-mobile.png") no-repeat;
-    background-size: 100%;
     background-position: center; } }
 
 @media screen and (max-device-width: 991px) {

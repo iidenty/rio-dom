@@ -18833,6 +18833,39 @@ var mySwiper3 = new Swiper('.services__swiper-container', {
     }
 });
 
+// CALC SWIPER FOR PHONE
+var mySwiper4 = new Swiper('.calc__swiper-container', {
+    // cssMode: true,
+    onlyExternal: true,
+    noSwiping: true,
+    allowTouchMove: false,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: -10,
+    grabCursor: true,
+    // breakpoints: {
+    //     345: {
+    //         slidesPerView: 1.2,
+    //         spaceBetween: 10,
+    //     },
+    //     425: {
+    //         slidesPerView: 1.5,
+    //         spaceBetween: 20,
+    //     },
+    // }
+});
+
 $("#gallery-next").click(function () {
     mySwiper2.slideNext()
 })
+
+$(".calc__btn-next").click(function () {
+    let item = $(".calc .swiper-slide-active input:radio:checked");
+    if (item.length === 1) {
+        mySwiper4.slideNext()
+    }
+});
+
+$(".calc__btn-prev").click(function () {
+    mySwiper4.slidePrev()
+});
