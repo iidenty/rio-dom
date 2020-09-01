@@ -664,7 +664,9 @@ input {
   .calc__input-number {
     border: 1px solid #ffc800;
     padding-right: 0;
-    border-radius: 23px;
+    border-radius: 23px !important;
+    background-image: none;
+    background: #f6f6f6;
     margin: 0;
     width: 100%;
   }
