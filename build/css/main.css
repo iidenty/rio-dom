@@ -11809,6 +11809,10 @@ input {
   display: -ms-flexbox;
   display: flex; }
 
+@media screen and (max-device-width: 1199px) {
+  .calc__next-info {
+    display: none; } }
+
 @media screen and (max-device-width: 767px) {
   .calc__input-number {
     border: 1px solid #ffc800;
