@@ -21,9 +21,11 @@
 // Импортируем JQuery-mask
 //= ../../node_modules/jquery-mask-plugin/dist/jquery.mask.min.js
 
-// Имортируем Swiper
+// Импортируем Swiper
 //= ../../node_modules/swiper/swiper-bundle.min.js
 
+// Импортируем wow.js
+//= wow.js
 
 // Импортируем другие js-файлы
 //= my.js

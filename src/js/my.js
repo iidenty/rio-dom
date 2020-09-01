@@ -31,6 +31,23 @@
 //     }
 // });
 
+let form = new WOW(
+    {
+        boxClass: 'form-animate',
+        live: false,
+    });
+
+var formNotOpened = true;
+
+function showForm() {
+    if (formNotOpened) {
+        $(".form-animate").css('opacity', 1, )
+        form.init()
+        $(".form-animate").addClass('animate__animated animate__fadeInUp')
+        formNotOpened = false;
+    }
+}
+
 let phones = $('.phone');
 let phone1 = $(".calc .phone");
 let phone2 = $(".support .phone");
@@ -69,13 +86,14 @@ $('.services__item').click(function () {
 
 //swiper
 var mySwiper = new Swiper('.swiper-container', {
-    // slidesPerView: 1,
+    centeredSlides: true,
+    slidesPerView: 1,
     // spaceBetween: 30,
     autoplay: {
         delay: 5000,
     },
     speed: 700,
-    spaceBetween: 100,
+    spaceBetween: 200,
     // loop: true,
     pagination: {
         el: '.swiper-pagination',// to find the swiper-pagination you put outside of the swiper-container
@@ -183,6 +201,10 @@ function updateValueCalcFolder() {
     } else {
         elem.text(formatMoney(sum, "", "", "."))
         $(".calc__folder-last").text("РУБЛЕЙ")
+    }
+
+    if (sum > 200000) {
+        showForm()
     }
 }
 

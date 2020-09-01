@@ -514,13 +514,17 @@ input {
   text-align: center;
   font-family: "PF Din Text Comp Pro", sans-serif;
   //font-family: "Muller Medium", sans-serif;
-  width: 40px;
+  width: 60px;
   height: 30px;
   border: none;
   border-bottom: 2px solid #ff8200;
   background: none;
   outline: none;
   //font-size: 1em !important;
+}
+
+.form-animate {
+  opacity: 0;
 }
 
 .calc__item {
@@ -796,6 +800,10 @@ input {
 
 .swiper-pagination__before-0:before {
   display: none !important;
+}
+
+.reviews .swiper-slide {
+  padding: 0 50px;
 }
 
 .reviews .swiper-pagination {
