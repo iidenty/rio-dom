@@ -18751,6 +18751,29 @@ $(".calc input").click(function (e) {
     updateValueCalcFolder()
 })
 
+$(".calc__pc input").on('click', function (e) {
+    let elem = $(this).parents(".calc__pc > div")
+    let next = elem.next()
+    let prev = elem.prev()
+    let nextNext = next.next()
+
+    console.log(nextNext)
+
+    nextNext.find('.calc__item').css("opacity", 1);
+    nextNext.find('.calc__item input').removeAttr("disabled");
+    nextNext.next().find('.calc__item').css("opacity", 1);
+    nextNext.next().find('.calc__item input').removeAttr("disabled");
+
+    if (next.find('div').hasClass('calc__next-info')) {
+        next.find('div').css("background", "url('img/calc__info-next-orange.png') no-repeat");
+    }
+
+    if (prev.find('div').hasClass('calc__next-info')) {
+        prev.find('div').css("background", "url('img/calc__info-next.png') no-repeat");
+    }
+
+})
+
 function formatMoney(n, c, d, t) {
     var c = isNaN(c = Math.abs(c)) ? 2 : c,
         d = d == undefined ? "." : d,
@@ -18775,21 +18798,46 @@ function updateValueCalcFolder() {
         sum += $(items[i]).data('price');
     }
 
-    let rooms = $(".calc input[name='rooms']").val();
-    let s = $(".calc input[name='area']").val();
+    let rooms = $(".calc__pc input[name='rooms']").val();
+    let s = $(".calc__pc input[name='area']").val();
 
-    if (isEmpty(rooms)) { rooms = 0 }
-    if (isEmpty(s)) { s = 0 }
+    let mrooms = $(".calc__mobile input[name='rooms']").val();
+    let ms = $(".calc__mobile input[name='area']").val();
+
+    if (isEmpty(rooms)) {
+        if(isEmpty(mrooms)) {
+            rooms = 0
+        } else {
+            rooms = mrooms
+        }
+    }
+    if (isEmpty(s)) {
+        if(isEmpty(ms)) {
+            s = 0
+        } else {
+            s = mrooms
+        }
+    }
 
     sum += rooms * 10000;
     sum += s * 400;
 
     // sum = sum.toString()
 
-    elem.text(formatMoney(sum, "", "", "."))
+    console.log(sum)
+
+    if (sum === 0) {
+        elem.text("")
+        $(".calc__folder-last").text("")
+    } else {
+        elem.text(formatMoney(sum, "", "", "."))
+        $(".calc__folder-last").text("РУБЛЕЙ")
+    }
 }
 
 $(".calc input[name='rooms'], .calc input[name='area']").on('blur', function () {
+    $(".calc__pc input[name='area']").parents('.calc__item').css('opacity', 1)
+    $(".calc__pc input[name='area']").removeAttr('disabled')
     updateValueCalcFolder()
 })
 

@@ -8695,6 +8695,14 @@ input {
 .calc__item {
   position: relative; }
 
+.calc__pc .calc__item {
+  opacity: 0.6; }
+
+.calc__pc .calc__next-info {
+  background-size: contain;
+  height: 100%;
+  width: 100%; }
+
 .calc__stick {
   position: absolute;
   background: url("../img/calc__stick.png") no-repeat;

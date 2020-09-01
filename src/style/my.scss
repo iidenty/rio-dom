@@ -527,15 +527,24 @@ input {
   position: relative;
 }
 
-.calc__pc > .calc__next-info:after {
+.calc__pc .calc__item{
+  opacity: 0.6
+}
+
+//.calc__pc .calc__item:nth-child(1) {
+//  opacity: 1
+//}
+
+.calc__pc .calc__next-info {
   //content: "";
   //position: absolute;
   //right: 2.8em;
   //top: 0;
   //bottom: 0;
   //background: url("../img/calc__info-next.png") no-repeat;
-  //background-size: contain;
-  //height: 100%;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
   //width: 42px;
 }
 
