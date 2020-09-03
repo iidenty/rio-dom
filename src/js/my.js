@@ -133,12 +133,13 @@ $(".calc__pc input").on('click', function (e) {
     nextNext.next().find('.calc__item').css("opacity", 1);
     nextNext.next().find('.calc__item input').removeAttr("disabled");
 
-    if (next.find('div').hasClass('calc__next-info')) {
+    if (next.find('div').hasClass('calc__next-info') && !next.find('div').hasClass('active')) {
         next.find('div').css("background", "url('img/calc__info-next-orange.png') no-repeat");
     }
 
     if (prev.find('div').hasClass('calc__next-info')) {
         prev.find('div').css("background", "url('img/calc__info-next.png') no-repeat");
+        prev.find('div').addClass('active')
     }
 
 })
