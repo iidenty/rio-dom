@@ -30,20 +30,24 @@
 //         $(event.target).addClass('indicators__item_active');
 //     }
 // });
+// $(".form-animate").style('visibility', 'visible', 'important')
 
+// new WOW().init();
 let form = new WOW(
     {
         boxClass: 'form-animate',
+        // animateClass: 'animated',
         live: false,
     });
+// form.init()
 
 var formNotOpened = true;
 
 function showForm() {
     if (formNotOpened) {
-        $(".form-animate").css('opacity', 1, )
+        $(".form-animate").css('opacity', 1)
         form.init()
-        $(".form-animate").addClass('animate__animated animate__fadeInUp')
+        // $(".form-animate").addClass('animate__animated animate__fadeInUp')
         formNotOpened = false;
     }
 }
@@ -299,4 +303,8 @@ $(".calc__btn-next").click(function () {
 
 $(".calc__btn-prev").click(function () {
     mySwiper4.slidePrev()
+});
+
+$('#exampleModal').on('show.bs.modal', function () {
+
 });

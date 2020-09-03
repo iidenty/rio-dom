@@ -41,7 +41,8 @@
 @import "../../node_modules/bootstrap/scss/_print";
 
 // Подключение Animate.css
-@import "../../node_modules/animate.css/animate.min";
+//@import "../../node_modules/animate.css/animate.min";
+@import "animate.min";
 
 // Подключение Swiper
 @import "../../node_modules/swiper/swiper-bundle.min";
