@@ -18703,6 +18703,7 @@ function showForm() {
 let phones = $('.phone');
 let phone1 = $(".calc .phone");
 let phone2 = $(".support .phone");
+let phone3 = $(".modal-content .phone");
 
 phones.on("focus", function () {
     phones.attr("placeholder", "");
@@ -18713,6 +18714,10 @@ phones.on("focus", function () {
 
     if (phone2.val() === '') {
         phone2.val('+7 (');
+    }
+
+    if (phone3.val() === '') {
+        phone3.val('+7 (');
     }
 });
 
@@ -18727,13 +18732,17 @@ phones.on("blur", function () {
     if (phone2.val() === '+7 (') {
         phone2.val('')
     }
+
+    if (phone3.val() === '+7 (') {
+        phone3.val('')
+    }
 });
 
 
 phones.mask('+7 (000) 000 00 00');
 
 $('.services__item').click(function () {
-    // alert('Пока нет информации')
+    $("#exampleModal").modal('show')
 });
 
 //swiper
