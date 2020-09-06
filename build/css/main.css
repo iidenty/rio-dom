@@ -11164,7 +11164,7 @@ input {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.85) 60%, rgba(255, 255, 255, 0) 100%);
   background-size: 100% 100%; }
 
 .gallery__slide {
@@ -11188,6 +11188,7 @@ input {
     background: rgba(255, 255, 255, 0.9); } }
 
 .calc {
+  margin-top: -6em;
   position: relative; }
 
 .calc .item__header {
@@ -11196,7 +11197,7 @@ input {
 .calc__container {
   position: relative;
   z-index: 99;
-  background-image: url("../img/calc__background.png");
+  background-image: url("../img/calc__backgound-new.png");
   min-height: 600px;
   background-size: cover;
   background-position: center top;
