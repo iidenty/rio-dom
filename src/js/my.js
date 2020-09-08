@@ -1,45 +1,21 @@
-// Gallery slider
-//import Swiper, {Autoplay} from "swiper";
+$('.flowing-scroll').on( 'click', function(){
+    var el = $(this);
+    var dest = el.attr('href'); // получаем направление
+    if(dest !== undefined && dest !== '') { // проверяем существование
+        $('html').animate({
+                scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+            }, 500 // скорость прокрутки
+        );
+    }
+    return false;
+});
 
-// let indicators = $(".gallery__indicators .indicators__item");
-// $(indicators).click(function (event) {
-//     if (confirm('Нет готовых картинок, вы готовы видеть нечто?')) {
-//
-//         let i = indicators.index(event.target);
-//         let container = $('.gallery__background');
-//
-//         // container.animate({'opacity': 0}, 150, function () {
-//         switch (i) {
-//             case 0:
-//                 container.css({'background-image': "url(img/gallery_1_with_dark_with_line.png)"});
-//                 break;
-//             case 1:
-//                 container.css({'background-image': "url(img/gallery_2.jpg)"});
-//                 break;
-//             case 2:
-//                 container.css({'background-image': "url(img/gallery_3.jpg)"});
-//                 break;
-//             case 3:
-//                 container.css({'background-image': "url(img/gallery_4.jpeg)"});
-//                 break;
-//         }
-//         // container.animate({'opacity': 1}, 150);
-//         // });
-//
-//         indicators.removeClass('indicators__item_active');
-//         $(event.target).addClass('indicators__item_active');
-//     }
-// });
-// $(".form-animate").style('visibility', 'visible', 'important')
-
-// new WOW().init();
 let form = new WOW(
     {
         boxClass: 'form-animate',
         // animateClass: 'animated',
         live: false,
     });
-// form.init()
 
 var formNotOpened = true;
 
