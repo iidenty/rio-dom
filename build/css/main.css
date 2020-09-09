@@ -11682,7 +11682,7 @@ input {
   outline: none; }
 
 .footer {
-  margin-top: 60px;
+  margin-top: 20px;
   text-transform: uppercase; }
 
 .footer__table {
@@ -11752,6 +11752,18 @@ input {
 @media screen and (max-device-width: 767px) {
   .footer__container {
     padding-top: 100px;
-    height: auto; }
+    height: auto;
+    background: url("../img/footer__background-mobile.png") no-repeat;
+    background-size: cover;
+    opacity: 1; }
   .footer__content {
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .footer__table-container {
+    top: -8em; }
+  .footer__table {
+    background-image: url("../img/footer__table-mobile.png"); } }
+
+@media screen and (max-device-width: 450px) {
+  .footer__table {
+    height: 195px;
+    background-size: cover; } }
