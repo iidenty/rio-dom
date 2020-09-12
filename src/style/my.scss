@@ -903,7 +903,7 @@ input {
 }
 
 .reviews .swiper-pagination:before {
-  content: 'ПОДРОБНЕЕ ';
+  //content: 'ПОДРОБНЕЕ ';
   color: #838181;
   font-size: calc(16px + 0.3vw);
 }
@@ -953,6 +953,9 @@ input {
 }
 
 .reviews__content {
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: auto;
   padding-top: 10px;
   font-size: calc(16px + 0.7vw);
 }
@@ -1258,12 +1261,12 @@ input {
   line-height: 33.13px;
 }
 
-.footer__whatsapp {
+.footer__whatsapp a {
   color: #4caf50;
   font-weight: bold;
 }
 
-.footer__viber {
+.footer__viber a {
   color: #cb00ff;
   font-weight: bold;
 }
