@@ -1,3 +1,87 @@
+// Отправка формы из модального окна
+function sendModal() {
+    let phone = $("#modal-phone");
+    let name = $("#modal-name");
+    let err = [];
+    let msg = "";
+
+    if (phone.val().length !== 18) {
+        err = err.concat("Телефон введен некорректно")
+    }
+
+    if (name.val() === "") {
+        err = err.concat("Имя введено некорректно")
+    }
+
+    if (err.length > 0) {
+        msg = "\n";
+        msg += err;
+        alert("Ошибка отправки формы: " + msg)
+        return false;
+    }
+
+    $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: $('.modal form').serialize(),
+        success: function(msg){
+            alert("Форма успешно отправлена")
+        },
+        error: function () {
+            alert("Ошибка отправки формы")
+        }
+    });
+}
+
+// Отправка формы из калькулятора
+function sendCalc() {
+    let inputs = $(".calc_pc input");
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value === "") {
+            alert('ПУСТО')
+        }
+        console.log(inputs[i])
+    }
+    console.log(inputs)
+    alert("Заявка принята")
+}
+
+// Отправка формы из подвала
+function supportSend() {
+    let phone = $("#support-phone");
+    let name = $("#support-name");
+    let err = [];
+    let msg = "";
+
+    if (phone.val().length !== 18) {
+        err = err.concat("Телефон введен некорректно")
+    }
+
+    if (name.val() === "") {
+        err = err.concat("Имя введено некорректно")
+    }
+
+    if (err.length > 0) {
+        msg = "\n";
+        msg += err;
+        alert("Ошибка отправки формы:" + msg)
+        return false;
+    }
+
+    $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: $('.support form').serialize(),
+        success: function(msg){
+            alert("Форма успешно отправлена")
+        },
+        error: function () {
+            alert("Ошибка отправки формы")
+        }
+    });
+}
+
+
 $('.flowing-scroll').on( 'click', function(){
     var el = $(this);
     var dest = el.attr('href'); // получаем направление

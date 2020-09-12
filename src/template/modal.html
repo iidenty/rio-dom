@@ -29,17 +29,19 @@
                     </div>
                     <div class="row">
                         <div class="col-10 offset-1">
-                            <div class="modal__form-group mb-3 text-center">
-                                <label class="modal__desc" for="modal-name">ИМЯ</label>
-                                <input id="modal-name" type="text">
-                            </div>
-                            <div class="modal__form-group mb-4 text-center">
-                                <label class="modal__desc" for="modal-phone">ТЕЛЕФОН</label>
-                                <input class="phone" id="modal-phone" type="text">
-                            </div>
-                            <div class="text-center pt-2 mb-3">
-                                <button class="intro__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
-                            </div>
+                            <form action="" method="post">
+                                <div class="modal__form-group mb-3 text-center">
+                                    <label class="modal__desc" for="modal-name">ИМЯ</label>
+                                    <input id="modal-name" name="name" type="text">
+                                </div>
+                                <div class="modal__form-group mb-4 text-center">
+                                    <label class="modal__desc" for="modal-phone">ТЕЛЕФОН</label>
+                                    <input class="phone" name="phone" id="modal-phone" type="text">
+                                </div>
+                                <div class="text-center pt-2 mb-3">
+                                    <button type="button" class="intro__btn" onclick="sendModal()">ПЕРЕЗВОНИТЕ МНЕ</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

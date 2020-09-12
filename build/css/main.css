@@ -11725,7 +11725,7 @@ input {
   color: #cb00ff;
   font-weight: bold; }
 
-.footer__telegram {
+.footer__telegram a {
   color: #039be5;
   font-weight: bold; }
 

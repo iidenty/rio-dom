@@ -48,17 +48,19 @@
                     </div>
                     <div class="row">
                         <div class="col-10 offset-1">
-                            <div class="modal__form-group mb-3 text-center">
-                                <label class="modal__desc" for="modal-name">ИМЯ</label>
-                                <input id="modal-name" type="text">
-                            </div>
-                            <div class="modal__form-group mb-4 text-center">
-                                <label class="modal__desc" for="modal-phone">ТЕЛЕФОН</label>
-                                <input class="phone" id="modal-phone" type="text">
-                            </div>
-                            <div class="text-center pt-2 mb-3">
-                                <button class="intro__btn">ПЕРЕЗВОНИТЕ МНЕ</button>
-                            </div>
+                            <form action="" method="post">
+                                <div class="modal__form-group mb-3 text-center">
+                                    <label class="modal__desc" for="modal-name">ИМЯ</label>
+                                    <input id="modal-name" name="name" type="text">
+                                </div>
+                                <div class="modal__form-group mb-4 text-center">
+                                    <label class="modal__desc" for="modal-phone">ТЕЛЕФОН</label>
+                                    <input class="phone" name="phone" id="modal-phone" type="text">
+                                </div>
+                                <div class="text-center pt-2 mb-3">
+                                    <button type="button" class="intro__btn" onclick="sendModal()">ПЕРЕЗВОНИТЕ МНЕ</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -92,7 +94,7 @@
                             </div>
                             <div class="col-lg d-none d-lg-block">
                                 Задайте вопрос напрямую в :
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="http://t.me/RIODOM">
                                     <img class="intro__messenger" src="img/intro__telegram.png" alt="">
                                 </a>
                                 <a target="_blank" href="https://api.whatsapp.com/send?phone=79270809042">
@@ -601,7 +603,7 @@
                         </div>
                         <div class="col-md-6 pb-3 pb-md-0 pl-md-0">
 <!--                           data-toggle="modal" data-target="#exampleModal"  ?-->
-                            <button class="h-100 btn-orange calc__btn text-uppercase w-100">получить расчет по смс</button>
+                            <button class="h-100 btn-orange calc__btn text-uppercase w-100" onclick="sendCalc()">получить расчет по смс</button>
                         </div>
                         <div class="col-md-6"></div>
                         <div class="col-md-6 pt-md-3">
@@ -1271,30 +1273,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <div class="support__inner">
-                        <div class="support__header">
-                            Заказать обратный звонок для консультации
+                    <form action="" method="post">
+                        <div class="support__inner">
+                            <div class="support__header">
+                                Заказать обратный звонок для консультации
+                            </div>
+                            <div class="support__city mt-2">
+                                <label class="d-inline" for="city">Ваш город:</label>
+                                <select class="support__select form-control-plaintext w-auto d-inline" name="city" id="city">
+                                    <option value="краснодар">КРАСНОДАР</option>
+                                    <option value="краснодар">КРАСНОДАР</option>
+                                    <option value="краснодар">КРАСНОДАР</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-4">
+                                <input class="support__input" id="support-name" type="text" name="name" placeholder="имя">
+                            </div>
+                            <div class="form-group">
+                                <input class="support__input phone"  id="support-phone" type="text" name="phone" placeholder="номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn-orange support__btn w-100" onclick="supportSend()" style="border-radius: 15px">
+                                    ОТПРАВИТЬ ЗАЯВКУ
+                                </button>
+                            </div>
                         </div>
-                        <div class="support__city mt-2">
-                            <label class="d-inline" for="city">Ваш город:</label>
-                            <select class="support__select form-control-plaintext w-auto d-inline" name="city" id="city">
-                                <option value="краснодар">КРАСНОДАР</option>
-                                <option value="краснодар">КРАСНОДАР</option>
-                                <option value="краснодар">КРАСНОДАР</option>
-                            </select>
-                        </div>
-                        <div class="form-group mt-4">
-                            <input class="support__input" type="text" name="name" placeholder="имя">
-                        </div>
-                        <div class="form-group">
-                            <input class="support__input phone" type="text" name="phone" placeholder="номер телефона">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn-orange support__btn w-100" style="border-radius: 15px">
-                                ОТПРАВИТЬ ЗАЯВКУ
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1333,20 +1337,22 @@
                                     <a class="font-weight-bold text-white" href="tel:+79270809042">8 (927) 080 90-42</a>
                                 </li>
                                 <li class="footer__whatsapp">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=79270809042">
+                                    <a target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=79270809042">
                                         <img class="img-fluid" src="img/whatsapp.png" alt="">
                                         whatsapp
                                     </a>
                                 </li>
                                 <li class="footer__viber">
-                                    <a href="viber://chat?number=%2B79270809042">
+                                    <a target="_blank" href="viber://chat?number=%2B79270809042">
                                         <img src="img/viber.png" alt="">
                                         viber
                                     </a>
                                 </li>
                                 <li class="footer__telegram">
-                                    <img src="img/telegram.png" alt="">
-                                    telegram
+                                    <a target="_blank" href="http://t.me/RIODOM">
+                                        <img src="img/telegram.png" alt="">
+                                        telegram
+                                    </a>
                                 </li>
                             </ul>
                         </div>
