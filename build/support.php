@@ -1,0 +1,62 @@
+<?php
+
+$msg = [];
+$msg['success'] = 0;
+
+if (!empty($_POST)) {
+    $err = [];
+
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+
+    if (empty($name)) {
+        $err[] = "Поле 'имя' должно быть заполнено";
+    }
+
+    if (empty($phone)) {
+        $err[] = "Поле 'номер телефона' должно быть заполнено";
+    }
+
+//
+    if (count($err) > 0) {
+        $msg['msg'] = 'Ошибка отправки формы: ';
+        $msg['errors'] = $err;
+        echo json_encode($msg);
+        die();
+    }
+
+    htmlspecialchars_decode($name);
+    htmlspecialchars_decode($phone);
+
+    $message = "
+        <h1>Заявка на обратный звонок от rio-dom.ru</h1>
+        <p>
+            <b>Имя:</b>
+            <span>$name</span>
+        </p>
+        <p>
+            <b>Номер телефона:</b>
+            <span>$phone</span>
+        </p>
+    ";
+
+    $result = mail(
+        'd.prytckov@yandex.ru',
+        'Получена заявка', $message,
+        "From: support@rio-dom.ru\r\n"
+        . "Content-type: text/html; charset=utf-8\r\n"
+        . "X-Mailer: PHP mail script"
+    );
+
+    if ($result) {
+        $msg['msg'] = 'Ваша заявка принята. Ожидайте звонка.';
+        $msg['success'] = 1;
+        echo json_encode($msg);
+    } else {
+        $msg['msg'] = 'Ошибка отправки письма. Попробуйте позже.';
+        echo json_encode($msg);
+    }
+} else {
+    $msg['msg'] = 'Ошибка отправки письма. Данные не получены.';
+    echo json_encode($msg);
+}

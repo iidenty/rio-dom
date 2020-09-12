@@ -21,7 +21,7 @@ function sendModal() {
     }
 
     $.ajax({
-        url: "mail.php",
+        url: "support.php",
         type: "POST",
         data: $('.modal form').serialize(),
         success: function(msg){
@@ -69,7 +69,7 @@ function supportSend() {
     }
 
     $.ajax({
-        url: "mail.php",
+        url: "support.php",
         type: "POST",
         data: $('.support form').serialize(),
         success: function(msg){
