@@ -11490,7 +11490,8 @@ input {
 
 .reviews__head {
   color: #ffad0d;
-  font-size: 2em; }
+  font-size: 2em;
+  text-transform: uppercase; }
 
 .reviews__content {
   max-height: 300px;

@@ -16,7 +16,13 @@
                                 </div>
                                 <div class="col-5 d-block d-md-none text-center">
                                     <img alt="" class="position-relative img-fluid"
-                                         src="img/calc__folder-mobile.png" style="bottom: -14px;">
+                                         src="img/calc__folder-mobile.png">
+                                    <div class="d-block d-md-none position-relative">
+                                        <div class="calc__folder-text" style="justify-content: center; width: 100%; font-size: 1.1em; left: -10px; top: auto; bottom: -5px; right: 0; transform: none !important;">
+                                            <span class="calc__folder-value">100.000</span>
+                                            <span class="calc__folder-last">РУБЛЕЙ</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +183,8 @@
                                         </label>
                                         <label class="item__header header-2 text-uppercase">
                                             площадь помещения
-                                            <input class="calc__input-text" name="area" type="number">
+                                            <input class="calc__input-text calc__end" name="area" type="number" step="50">
+                                            <span style="text-transform: lowercase">м<sup>2</sup></span>
                                         </label>
                                     </div>
                                 </div>
@@ -363,7 +370,8 @@
                             <div class="calc__item">
                                 <label class="item__header header-2 text-uppercase text-nowrap">
                                     площадь помещения
-                                    <input disabled class="calc__input-text" name="area" type="number">
+                                    <input disabled class="calc__input-text calc__end" name="area" type="number" step="50">
+                                    <span style="text-transform: lowercase">м<sup>2</sup></span>
                                 </label>
                             </div>
                         </div>

@@ -12,7 +12,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=16101a5ad0ab6954f6e87ab85d48a036" rel="stylesheet" />
+    <link href="css/main.css?v=821d6dc76edf3ca43cfc9909bfd8236d" rel="stylesheet" />
     
     <title>Home</title>
 </head>
@@ -240,7 +240,13 @@
                                 </div>
                                 <div class="col-5 d-block d-md-none text-center">
                                     <img alt="" class="position-relative img-fluid"
-                                         src="img/calc__folder-mobile.png" style="bottom: -14px;">
+                                         src="img/calc__folder-mobile.png">
+                                    <div class="d-block d-md-none position-relative">
+                                        <div class="calc__folder-text" style="justify-content: center; width: 100%; font-size: 1.1em; left: -10px; top: auto; bottom: -5px; right: 0; transform: none !important;">
+                                            <span class="calc__folder-value">100.000</span>
+                                            <span class="calc__folder-last">РУБЛЕЙ</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +407,8 @@
                                         </label>
                                         <label class="item__header header-2 text-uppercase">
                                             площадь помещения
-                                            <input class="calc__input-text" name="area" type="number">
+                                            <input class="calc__input-text calc__end" name="area" type="number" step="50">
+                                            <span style="text-transform: lowercase">м<sup>2</sup></span>
                                         </label>
                                     </div>
                                 </div>
@@ -587,7 +594,8 @@
                             <div class="calc__item">
                                 <label class="item__header header-2 text-uppercase text-nowrap">
                                     площадь помещения
-                                    <input disabled class="calc__input-text" name="area" type="number">
+                                    <input disabled class="calc__input-text calc__end" name="area" type="number" step="50">
+                                    <span style="text-transform: lowercase">м<sup>2</sup></span>
                                 </label>
                             </div>
                         </div>
@@ -700,12 +708,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-1.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Игорь Волынский</div>
                                             <div class="reviews__content">
                                                 Спасибо ребятам из этой компании, которые делали ремонт на Братиславской. Качество работ могу оценить по высшему баллу. Все сделали именно так, как и договаривались. Ничего лишнего не придумывали, по цене все сошлось со сметой. Работают по договору, все нюансы по времени работ можно было с ними обсудить, достаточно гибкие в таких вопросах.
                                             </div>
@@ -718,12 +726,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-2.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Артём Румянцев</div>
                                             <div class="reviews__content">
                                                 Выражаем огромную благодарность фирме за сделанный ремонт и всем ее рабочим, кто у нас работал. Квартира студия в Путилково 32 метра. Сделали все в условиях пандемии за 2,5 месяца. Не было возможности постоянно ездить, контролировать, встречать материалы, прораб взял все вопросы на себя и все оперативно решал. Получился очень хороший ремонт.
                                             </div>
@@ -736,12 +744,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__woman-1.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Наталья Громова</div>
                                             <div class="reviews__content">Профессиональный подход во всем, от составления сметы до коммуникаций и обратной связи.
                                                 Это мой пятый ремонт, и я никогда бы не поверила, что ремонт бывает и без головной боли и паники.
                                                 Владислав, представитель компании и прораб — профессионал высокого уровня. Смета составлена с учетом всех мелочей, сроки соблюдены до недели а финальная стоимость отличалась от сметы менее чем на 5%.</div>
@@ -754,12 +762,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-3.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Тимур Садыков</div>
                                             <div class="reviews__content">
                                                 Сделал очень крутой стильный ремонт в квартире с фирмой РиО ДОМ. Теперь могу сказать, что в этой фирме по-настоящему трудятся. Ремонт качественный от и до. Все настолько ровно, аккуратно. У меня ни единой претензии или недовольства в адрес ребят или работ не возникло. Спасибо вам большое за добросовестный труд.
                                             </div>
@@ -772,12 +780,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-4.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Александр Громов</div>
                                             <div class="reviews__content">
                                                 Отзыв мой положительный, мастера были вежливы и аккуратны, из недостатков мы после подписания договора ожидали начало ремонта двух недель, но обращались в разгар сезона и предупреждали нас об этом, когда начали предметно с компанией обсуждать стройку. Придираться особо не к чему, на паре приемок указывали недочеты которые были исправлены, условия договора и срок соблюли, это вкупе с качеством и указывает на положительные впечатления о стройки с моей стороны.
                                             </div>
@@ -790,12 +798,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__woman-4.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Дана Торопова</div>
                                             <div class="reviews__content">
                                                 Все прошло успешно, хоть и в начале были небольшие нестыковки. Долго обсуждали проект с менеджером, каждый раз вносили корректировки. Но сейчас даже рады, что потратили на это время. Ремонт выполнен хорошо, главное аккуратно. Прошел только месяц, как мы живем в этой квартире, но пока все отлично. Фирма нам дала гарантию на работы.
                                             </div>
@@ -808,12 +816,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__woman-2.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Татьяна Бабикова</div>
                                             <div class="reviews__content">
                                                 Довольна проведенным ремонтом в моей квартире. Дом старый, стены пол, потолок просто были в жутком состоянии... Мастера из вашей компании сделали все как обговорили. Быстро, качественно и по цене, вполне приемлемо, прекрасно понимая, что работы было не мало... Спасибо за выполненные работы!
                                             </div>
@@ -826,12 +834,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-6.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Даниил Абунагимов</div>
                                             <div class="reviews__content">
                                                 Отремонтировали с женой нашу двушку через эту компанию. По всей квартире у нас теперь красивое, светодиодное освещение, а в гостиной большая люстра. Решили сделать красивый, деревянный пол, который нам хорошо и ровно уложили. Обои поклеены ровно. Сотрудничеством остались вполне довольны, подчеркну адекватные цены.
                                             </div>
@@ -844,12 +852,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__woman-3.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Эльвира Галиева</div>
                                             <div class="reviews__content">
                                                 Решилась, наконец, на капитальный ремонт квартиры, очень долго мониторила всевозможные строительные фирмы. Читала море отзывов... Наткнулась на сайт вашей компании "РиО ДОМ" и решила остановиться на этом. Скажу, что не пожалела! Ребята дизайнеры постарались на славу! Все сделано отлично и в срок! Я сама лично заезжала несколько раз, посмотреть, как идут работы, никакой халтуры! Рекомендую!
                                             </div>
@@ -862,12 +870,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-7.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Дима Елизарьев</div>
                                             <div class="reviews__content">
                                                 Это был первый ремонт в моей жизни, купили квартиру на вторичке, убитую.. Родители сочувственно вздыхали, но я так и не понял почему. Ведь я обратился к профессионалам и потому, ремонт для меня обошелся малой кровью. Меня практически не дергали, но при этом все пожелания были учтены и выполнены. Теперь всем советую фирму. Ремонт может быть простым, когда в деле опытные люди.
                                             </div>
@@ -880,12 +888,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-8.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Руслан Вахитов</div>
                                             <div class="reviews__content">
                                                 Нужен был профессиональный ремонт офисного помещения. Компанию-подрядчика я выбирал очень внимательно. Читал отзывы, проверял информацию в интернете. В итоге выбор свой остановил на РиО ДОМ. Здесь мне понравилось, что все расчеты и смету мне смогли предоставить сразу. Сориентировать по срокам и по цене. Меня все устроило и я заказал у ребят все работы. Все заказанные мной работы были выполнены в обозначенное время. Претензий никаких у меня к результатам не возникло. Отделка выполнена безупречно!
                                             </div>
@@ -898,12 +906,12 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__man-5.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
                                             <div class="swiper-pagination swiper-pagination__before-0 d-flex d-md-none"></div>
-                                            <div class="reviews__head header-1 pt-5 pt-md-0">ЛИНА РОМАН</div>
+                                            <div class="reviews__head header-1 pt-5 pt-md-0">Рашид Бекузаров</div>
                                             <div class="reviews__content">
                                                 Спасибо большое всем ребятам за потрясающий современный и такой непринужденный ремонт в моем загородном доме. Так классно все получилось, уютно, комфортно, без пафоса и помпезности. Отделка очень гармоничная и приятная. Мы с супругой от результата в восторге. Вы супер! Спасибо еще раз!
                                             </div>
@@ -916,7 +924,7 @@
                             <div class="swiper-slide" data-swiper-autoplay="5000">
                                 <div class="row text-center text-md-left">
                                     <div class="col-md-4">
-                                        <img src="img/reviews__1.png" class="img-fluid" alt="">
+                                        <img src="img/reviews__woman-5.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="reviews__item-container">
@@ -1379,6 +1387,6 @@
 
     </div>
 </footer>
-<script defer src="js/main.js?v=16101a5ad0ab6954f6e87ab85d48a036"></script>
+<script defer src="js/main.js?v=821d6dc76edf3ca43cfc9909bfd8236d"></script>
 </body>
 </html>

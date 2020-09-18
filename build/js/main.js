@@ -18688,15 +18688,90 @@ function sendModal() {
 
 // Отправка формы из калькулятора
 function sendCalc() {
-    let inputs = $(".calc_pc input");
-    for (let i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === "") {
-            alert('ПУСТО')
-        }
-        console.log(inputs[i])
+    let container = $(".calc");
+    let phone = $(".calc__input-number").val();
+    let name = "Неизвестно";
+    let value = value_calc;
+
+    if (phone.length !== 18) {
+        alert("Телефон введен некорректно")
+        return false;
     }
-    console.log(inputs)
-    alert("Заявка принята")
+
+    if ($(".calc__pc input[name='rooms']").val() == "") {
+        // Получение данных из мобильной версии
+        let type = $(".calc__mobile input[name='type']:checked").val()
+        let repairs = $(".calc__mobile input[name='repairs']:checked").val()
+        let view = $(".calc__mobile input[name='view']:checked").val()
+        let redevelopment = $(".calc__mobile input[name='redevelopment']:checked").val()
+        let alignment = $(".calc__mobile input[name='alignment']:checked").val()
+        let rooms = $(".calc__mobile input[name='rooms']").val()
+        let area = $(".calc__mobile input[name='area']").val()
+
+        let data = {
+            "type" : type,
+            "repairs" : repairs,
+            "view" : view,
+            "redevelopment" : redevelopment,
+            "alignment" : alignment,
+            "rooms" : rooms,
+            "area" : area,
+            "value" : value,
+        }
+
+        console.log('data', data);
+
+        $.ajax({
+            url: "calc.php",
+            type: "POST",
+            data: {"name": name, "phone": phone, "data": data},
+            success: function(msg){
+                alert("Форма успешно отправлена")
+                console.log(msg)
+            },
+            error: function () {
+                alert("Ошибка отправки формы")
+            }
+        });
+
+    } else {
+        // Получение данных из комп. версии
+        let type = $(".calc__pc input[name='type']:checked").val()
+        let repairs = $(".calc__pc input[name='repairs']:checked").val()
+        let view = $(".calc__pc input[name='view']:checked").val()
+        let redevelopment = $(".calc__pc input[name='redevelopment']:checked").val()
+        let alignment = $(".calc__pc input[name='alignment']:checked").val()
+        let rooms = $(".calc__pc input[name='rooms']").val()
+        let area = $(".calc__pc input[name='area']").val()
+
+        let data = {
+            "type" : type,
+            "repairs" : repairs,
+            "view" : view,
+            "redevelopment" : redevelopment,
+            "alignment" : alignment,
+            "rooms" : rooms,
+            "area" : area,
+            "value" : value,
+        }
+
+        console.log('data', type, repairs, view, redevelopment, alignment, rooms, area);
+
+        $.ajax({
+            url: "calc.php",
+            type: "POST",
+            data: {"name": name, "phone": phone, "data": data},
+            success: function(msg){
+                alert("Форма успешно отправлена")
+                console.log(msg)
+            },
+            error: function () {
+                alert("Ошибка отправки формы")
+            }
+        });
+    }
+
+    // alert("Заявка принята")
 }
 
 // Отправка формы из подвала
@@ -18846,6 +18921,16 @@ $(".calc input").click(function (e) {
     updateValueCalcFolder()
 })
 
+$(".calc input").on('blur', function () {
+    updateValueCalcFolder()
+})
+
+$(".calc__mobile input").on('click', function (e) {
+    setTimeout(function () {
+        mySwiper4.slideNext()
+    }, 500)
+})
+
 $(".calc__pc input").on('click', function (e) {
     let elem = $(this).parents(".calc__pc > div")
     let next = elem.next()
@@ -18885,6 +18970,8 @@ function isEmpty(str) {
     return (typeof str === "undefined" || str === null || str ===  "");
 }
 
+var value_calc = 0;
+
 function updateValueCalcFolder() {
     let elem = $(".calc__folder-value");
     let items = $(".calc input:radio:checked");
@@ -18911,7 +18998,7 @@ function updateValueCalcFolder() {
         if(isEmpty(ms)) {
             s = 0
         } else {
-            s = mrooms
+            s = ms
         }
     }
 
@@ -18922,6 +19009,8 @@ function updateValueCalcFolder() {
 
     console.log(sum)
 
+    value_calc = sum;
+
     if (sum === 0) {
         elem.text("")
         $(".calc__folder-last").text("")
@@ -18930,12 +19019,28 @@ function updateValueCalcFolder() {
         $(".calc__folder-last").text("РУБЛЕЙ")
     }
 
-    if (sum > 200000) {
-        showForm()
-    }
+    // if (sum > 200000) {
+        // showForm()
+    // }
 }
 
-$(".calc input[name='rooms'], .calc input[name='area']").on('blur', function () {
+$(".calc input[name='area']").on('click', function () {
+    showForm()
+})
+
+$(".calc__pc input[name='rooms']").on('blur', function () {
+    if ($(".calc__pc input[name='rooms']").val() == "") {
+        $(".calc__pc input[name='rooms']").val(3);
+    }
+})
+
+$(".calc__mobile input[name='rooms']").on('blur', function () {
+    if ($(".calc__mobile input[name='rooms']").val() == "") {
+        $(".calc__mobile input[name='rooms']").val(3);
+    }
+})
+
+$(".calc input[name='rooms'], .calc input[name='area']").on('click', function () {
     $(".calc__pc input[name='area']").parents('.calc__item').css('opacity', 1)
     $(".calc__pc input[name='area']").removeAttr('disabled')
     updateValueCalcFolder()
@@ -18985,6 +19090,7 @@ var mySwiper3 = new Swiper('.services__swiper-container', {
 var mySwiper4 = new Swiper('.calc__swiper-container', {
     // cssMode: true,
     onlyExternal: true,
+    speed: 700,
     noSwiping: true,
     allowTouchMove: false,
     centeredSlides: true,
