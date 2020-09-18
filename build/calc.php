@@ -86,7 +86,7 @@ if (!empty($_POST)) {
         </p>
         <p>
             <b>Итого: </b>
-            <span>" . $data['value'] . "</span>
+            <span>" . $data['value'] . " рублей</span>
         </p>
     ";
 
