@@ -41,7 +41,14 @@ if (!empty($_POST)) {
 
     htmlspecialchars_decode($name);
     htmlspecialchars_decode($phone);
-    htmlspecialchars_decode($data);
+    htmlspecialchars_decode($data["type"]);
+    htmlspecialchars_decode($data["repairs"]);
+    htmlspecialchars_decode($data["view"]);
+    htmlspecialchars_decode($data["redevelopment"]);
+    htmlspecialchars_decode($data["alignment"]);
+    htmlspecialchars_decode($data["rooms"]);
+    htmlspecialchars_decode($data["area"]);
+    htmlspecialchars_decode($data["value"]);
 
     $message = "
         <h1>Заявка на расчет по СМС от rio-dom.ru</h1>
