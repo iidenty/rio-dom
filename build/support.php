@@ -8,6 +8,7 @@ if (!empty($_POST)) {
 
     $name = $_POST['name'];
     $phone = $_POST['phone'];
+    $city = $_POST['city'];
 
     if (empty($name)) {
         $err[] = "Поле 'имя' должно быть заполнено";
@@ -16,6 +17,11 @@ if (!empty($_POST)) {
     if (empty($phone)) {
         $err[] = "Поле 'номер телефона' должно быть заполнено";
     }
+    
+    if (empty($city)) {
+        $city = "Не выбран";
+    }
+
 
 //
     if (count($err) > 0) {
@@ -27,7 +33,8 @@ if (!empty($_POST)) {
 
     htmlspecialchars_decode($name);
     htmlspecialchars_decode($phone);
-
+    htmlspecialchars_decode($city);
+    
     $message = "
         <h1>Заявка на обратный звонок от rio-dom.ru</h1>
         <p>
@@ -38,10 +45,14 @@ if (!empty($_POST)) {
             <b>Номер телефона:</b>
             <span>$phone</span>
         </p>
+        <p>
+            <b>Город:</b>
+            <span>$city</span>
+        </p>
     ";
 
     $result = mail(
-        'd.prytckov@yandex.ru',
+        'd.prytckov@yandex.ru, riodom.info@gmail.com',
         'Получена заявка', $message,
         "From: support@rio-dom.ru\r\n"
         . "Content-type: text/html; charset=utf-8\r\n"

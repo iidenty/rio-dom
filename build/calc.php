@@ -91,7 +91,7 @@ if (!empty($_POST)) {
     ";
 
     $result = mail(
-        'd.prytckov@yandex.ru',
+        'd.prytckov@yandex.ru, riodom.info@gmail.com',
         'Получен расчет', $message,
         "From: support@rio-dom.ru\r\n"
         . "Content-type: text/html; charset=utf-8\r\n"

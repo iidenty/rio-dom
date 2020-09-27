@@ -1,3 +1,113 @@
+var mobile = false;
+
+if ($(window).width() < 767) {
+    console.log("<")
+    $("#city__input-text").attr('placeholder', "Поиск");
+    mobile = true;
+}
+
+// Выбор города
+// Смена значения города из модального окна при нажатии город в выпадающем списке или общем списке
+
+$(".city__dropdown").on("click", "button", function (e) {
+    $("#city__input-text").val($(this).text())
+    cityDrop.css('display', 'none');
+})
+
+$(".city__collection li").on('click', function (e) {
+    $("#city__input-text").val($(this).text())
+    if (mobile) {
+        let city = $("#city__input-text").val();
+        if (city === "") {
+            city = "Не выбран"
+        }
+        //console.log(city)
+        $(".support__select").text(city);
+        $("#city__input").val(city);
+        $("#cityModal").modal('hide');
+    }
+})
+
+$("#cityOpen").on('click', function () {
+    //console.log('close')
+    let city = $("#city__input-text").val();
+    if (city === "") {
+        city = "Не выбран"
+    }
+    //console.log(city)
+    $(".support__select").text(city);
+    $("#city__input").val(city);
+    $("#cityModal").modal('hide');
+})
+
+// Изменено поле ввода
+$("#city__input-text").on('input', function () {
+    if ($("#city__input-text").val().length === 0) {
+        //console.log("no")
+        cityDrop.css('display', 'none');
+    } else {
+        //console.log("yes")
+        let s = $("#city__input-text").val();
+        getCity(s)
+    }
+})
+
+// Получить названия городов по части строки
+var gettingCity = false;
+function getCity(s) {
+    if (!gettingCity) {
+        gettingCity = true;
+        $.ajax({
+            url: "city.php",
+            type: "POST",
+            data: {"name": s},
+            success: function(msg){
+                //console.log("Форма успешно отправлена")
+                //console.log(msg)
+                let data = JSON.parse(msg)
+                // console.log(data)
+                cityRender(data)
+            },
+            error: function () {
+                console.log("Ошибка отправки формы")
+            }
+        });
+    } else {
+        setTimeout(function () {
+            gettingCity = false;
+            if ($("#city__input-text").val().length ==! 0) {
+                getCity(s);
+            }
+        }, 300);
+    }
+}
+
+var cityDrop = $(".city__dropdown");
+
+function cityRender(data = []) {
+    cityDrop.children().remove();
+    if (data.length === 0) {
+        cityDrop.css('display', 'none');
+    } else {
+        cityDrop.css('display', 'block');
+        for (let i = 0; i < data.length; i++) {
+            cityDrop.append("<li><button>" + data[i] + "</button></li>");
+        }
+    }
+}
+
+$('#cityModal').on('hidden.bs.modal', function (e) {
+    console.log('close')
+    let city = $("#city__input-text").val();
+    if (city === "") {
+        city = "Не выбран"
+    }
+    console.log(city)
+    $(".support__select").text(city);
+    $("#city__input").val(city);
+    $("#cityModal").modal('hide');
+})
+
 // Отправка формы из модального окна
 function sendModal() {
     let phone = $("#modal-phone");

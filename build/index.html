@@ -12,12 +12,12 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=821d6dc76edf3ca43cfc9909bfd8236d" rel="stylesheet" />
+    <link href="css/main.css?v=4fb6b661ec18ae7edcff466cbad4ae5d" rel="stylesheet" />
     
     <title>Home</title>
 </head>
 <body>
-<div class="modal fade" style="padding-left: 0 !important; padding-right: 0 !important;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal modal-define fade" style="padding-left: 0 !important; padding-right: 0 !important;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -61,6 +61,83 @@
                                     <button type="button" class="intro__btn" onclick="sendModal()">ПЕРЕЗВОНИТЕ МНЕ</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="cityModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="city__header">
+                <div class="modal-title position-relative">
+                    <label class="d-block city__title text-left text-md-center" for="city__input-text">Выберите регион <span class="d-none d-md-inline">или город</span></label>
+                    <button type="button" class="close position-absolute d-inline d-md-none" style="top: 0; right: 0; bottom: 0;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                    </button>
+                </div>
+                <div class="city__input-group justify-content-start justify-content-md-between position-relative">
+                    <input name="city" id="city__input-text" class="city__input-text" type="search" placeholder="Выберите регион или город" autocomplete="nope">
+                    <button id="cityOpen" class="ml-2 d-none d-md-inline btn-orange">Выбрать</button>
+                </div>
+                <div class="position-relative">
+                    <ul class="city__dropdown" style="display: none">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="city__content">
+                <div class="city__default"></div>
+                <div class="city__collection">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="city__collection-b">
+                                <li>Москва и МО</li>
+                                <li>Санкт-Петербург и ЛО</li>
+                                <li>Екатеринбург</li>
+                                <li>Краснодар</li>
+                                <li>Новосибирск</li>
+                                <li>Красноярск</li>
+                                <li>Челябинск</li>
+                                <li>Ростов-на-Дону</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="city__collection-b">
+                                <li>Тюмень</li>
+                                <li>Уфа</li>
+                                <li>Казань</li>
+                                <li>Пермь</li>
+                                <li>Нижний Новгород</li>
+                                <li>Самара</li>
+                                <li>Саратов</li>
+                                <li>Омск</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="city__collection-b">
+                                <li>Балашиха</li>
+                                <li>Волгоград</li>
+                                <li>Воронеж</li>
+                                <li>Иркутск</li>
+                                <li>Хабаровск</li>
+                                <li>Томск</li>
+                                <li>Ярославль</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li>Сочи</li>
+                                <li>Сургут</li>
+                                <li>Подольск</li>
+                                <li>Мытищи</li>
+                                <li>Владивосток</li>
+                                <li>Калуга</li>
+                                <li>Пятигорск</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -162,13 +239,22 @@
             <div class="w-100 h-100 swiper-container-2 swiper-container-initialized swiper-container-horizontal">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img class="gallery__slide" src="img/gallery__slide-1.png" alt="">
+                        <img class="gallery__slide" src="img/gg1.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img class="gallery__slide" src="img/gallery__slide-1.png" alt="">
+                        <img class="gallery__slide" src="img/gg2.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img class="gallery__slide" src="img/gallery__slide-1.png" alt="">
+                        <img class="gallery__slide" src="img/gg3.png" alt="">
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gg4.png" alt="">
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gg5.png" alt="">
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="2000">
+                        <img class="gallery__slide" src="img/gg6.png" alt="">
                     </div>
                 </div>
             </div>
@@ -1287,12 +1373,9 @@
                                 Заказать обратный звонок для консультации
                             </div>
                             <div class="support__city mt-2">
-                                <label class="d-inline" for="city">Ваш город:</label>
-                                <select class="support__select form-control-plaintext w-auto d-inline" name="city" id="city">
-                                    <option value="краснодар">КРАСНОДАР</option>
-                                    <option value="краснодар">КРАСНОДАР</option>
-                                    <option value="краснодар">КРАСНОДАР</option>
-                                </select>
+                                <span class="d-inline">Ваш город:</span>
+                                <span class="support__select" data-toggle="modal" data-target="#cityModal">ВЫБРАТЬ ГОРОД</span>
+                                <input id="city__input" name="city" value="ВЫБРАТЬ ГОРОД" type="hidden">
                             </div>
                             <div class="form-group mt-4">
                                 <input class="support__input" id="support-name" type="text" name="name" placeholder="имя">
@@ -1387,6 +1470,6 @@
 
     </div>
 </footer>
-<script defer src="js/main.js?v=821d6dc76edf3ca43cfc9909bfd8236d"></script>
+<script defer src="js/main.js?v=4fb6b661ec18ae7edcff466cbad4ae5d"></script>
 </body>
 </html>
