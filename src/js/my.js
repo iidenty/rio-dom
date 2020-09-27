@@ -72,6 +72,7 @@ function getCity(s) {
                 console.log("Ошибка отправки формы")
             }
         });
+        gettingCity = false;
     } else {
         setTimeout(function () {
             gettingCity = false;

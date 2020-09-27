@@ -18674,7 +18674,7 @@ $(".city__collection li").on('click', function (e) {
         if (city === "") {
             city = "Не выбран"
         }
-        console.log(city)
+        //console.log(city)
         $(".support__select").text(city);
         $("#city__input").val(city);
         $("#cityModal").modal('hide');
@@ -18682,12 +18682,12 @@ $(".city__collection li").on('click', function (e) {
 })
 
 $("#cityOpen").on('click', function () {
-    console.log('close')
+    //console.log('close')
     let city = $("#city__input-text").val();
     if (city === "") {
         city = "Не выбран"
     }
-    console.log(city)
+    //console.log(city)
     $(".support__select").text(city);
     $("#city__input").val(city);
     $("#cityModal").modal('hide');
@@ -18696,10 +18696,10 @@ $("#cityOpen").on('click', function () {
 // Изменено поле ввода
 $("#city__input-text").on('input', function () {
     if ($("#city__input-text").val().length === 0) {
-        console.log("no")
+        //console.log("no")
         cityDrop.css('display', 'none');
     } else {
-        console.log("yes")
+        //console.log("yes")
         let s = $("#city__input-text").val();
         getCity(s)
     }
@@ -18715,8 +18715,8 @@ function getCity(s) {
             type: "POST",
             data: {"name": s},
             success: function(msg){
-                console.log("Форма успешно отправлена")
-                console.log(msg)
+                //console.log("Форма успешно отправлена")
+                //console.log(msg)
                 let data = JSON.parse(msg)
                 // console.log(data)
                 cityRender(data)
@@ -18725,6 +18725,7 @@ function getCity(s) {
                 console.log("Ошибка отправки формы")
             }
         });
+        gettingCity = false;
     } else {
         setTimeout(function () {
             gettingCity = false;
