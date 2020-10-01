@@ -10891,6 +10891,8 @@ label {
 @media screen and (max-device-width: 767px) {
   .city__collection-b {
     border-bottom: 2px solid #dee2e6 !important; }
+  .city__dropdown li button {
+    font-size: 1.2rem; }
   #cityModal .modal-dialog {
     max-width: 101%;
     min-width: 101%;

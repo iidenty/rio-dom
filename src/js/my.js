@@ -6,12 +6,32 @@ if ($(window).width() < 767) {
     mobile = true;
 }
 
+//let city = ymaps.geolocation.get()
+
+// if (ymaps.location) {
+//     console.log(ymaps.location.city);
+// }
+
+// $("#city__input").text(city);
+// $(".support__select").text(city);
+
+
 // Выбор города
 // Смена значения города из модального окна при нажатии город в выпадающем списке или общем списке
 
 $(".city__dropdown").on("click", "button", function (e) {
     $("#city__input-text").val($(this).text())
     cityDrop.css('display', 'none');
+    if (mobile) {
+        let city = $("#city__input-text").val();
+        if (city === "") {
+            city = "Не выбран"
+        }
+        //console.log(city)
+        $(".support__select").text(city);
+        $("#city__input").val(city);
+        $("#cityModal").modal('hide');
+    }
 })
 
 $(".city__collection li").on('click', function (e) {
