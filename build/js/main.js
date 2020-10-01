@@ -18667,6 +18667,22 @@ k("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
 })();
 
 // Импортируем другие js-файлы
+// Geolocation
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        console.log("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    console.log("Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude);
+}
+
+getLocation()
+
 var mobile = false;
 
 if ($(window).width() < 767) {
@@ -18677,9 +18693,9 @@ if ($(window).width() < 767) {
 
 //let city = ymaps.geolocation.get()
 
-if (ymaps.location) {
-    console.log(ymaps.location.city);
-}
+// if (ymaps.location) {
+//     console.log(ymaps.location.city);
+// }
 
 // $("#city__input").text(city);
 // $(".support__select").text(city);
@@ -19056,6 +19072,10 @@ var mySwiper = new Swiper('.swiper-container', {
             // console.log(slider_array);
             return '<span class="indicators__item ' + className + '"></span>';
         }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 })
 mySwiper.autoplay.start();

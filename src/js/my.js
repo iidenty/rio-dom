@@ -1,3 +1,19 @@
+// Geolocation
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        console.log("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    console.log("Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude);
+}
+
+getLocation()
+
 var mobile = false;
 
 if ($(window).width() < 767) {
@@ -387,6 +403,10 @@ var mySwiper = new Swiper('.swiper-container', {
             // console.log(slider_array);
             return '<span class="indicators__item ' + className + '"></span>';
         }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 })
 mySwiper.autoplay.start();

@@ -11545,7 +11545,9 @@ input {
   padding: 0 50px; }
 
 .reviews .swiper-pagination {
-  margin-top: 20px;
+  padding: 0 50px;
+  position: static !important;
+  margin-top: 10px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -11595,11 +11597,14 @@ input {
   text-transform: uppercase; }
 
 .reviews__content {
-  max-height: 300px;
   min-height: 300px;
   overflow-y: auto;
   padding-top: 10px;
   font-size: calc(16px + 0.7vw); }
+
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+  outline: none; }
 
 .reviews__btn-group {
   position: absolute;
