@@ -10760,6 +10760,22 @@ button.swiper-pagination-bullet {
   font-family: "Muller Regular";
   src: url("../fonts/Muller Regular.ttf"); }
 
+.scrolled {
+  transition: 0.2s;
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  width: 100%;
+  background-color: black; }
+
+@media screen and (max-device-width: 767px) {
+  .scrolled {
+    position: -webkit-sticky;
+    position: sticky;
+    background: none; } }
+
 body {
   overflow-x: hidden !important; }
 
@@ -11063,7 +11079,7 @@ input {
 
 .intro {
   position: relative;
-  z-index: 5; }
+  z-index: 100000000; }
 
 .intro__container {
   width: 101%;
@@ -11116,7 +11132,8 @@ input {
   height: 1.5em; }
 
 .intro__head {
-  padding-top: 30px; }
+  padding-top: 30px;
+  z-index: 10000000000; }
 
 .intro__center {
   display: -ms-flexbox;

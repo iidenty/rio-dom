@@ -1,3 +1,14 @@
+// Change header when scroll changed
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".intro__head").addClass("scrolled");
+    } else {
+        $(".intro__head").removeClass("scrolled");
+    }
+});
+
 // Geolocation
 function getLocation() {
     if (navigator.geolocation) {

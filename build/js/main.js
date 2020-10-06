@@ -18667,6 +18667,17 @@ k("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
 })();
 
 // Импортируем другие js-файлы
+// Change header when scroll changed
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".intro__head").addClass("scrolled");
+    } else {
+        $(".intro__head").removeClass("scrolled");
+    }
+});
+
 // Geolocation
 function getLocation() {
     if (navigator.geolocation) {
@@ -18677,6 +18688,13 @@ function getLocation() {
 }
 
 function showPosition(position) {
+    let result = $.get("https://geocode-maps.yandex.ru/1.x", {
+        geocode: position.coords.longitude + ", " + position.coords.latitude,
+        apikey: "5f465faa-835b-4029-a00d-fd2f62c28240",
+        kind: "locality",
+        format: "json"
+    });
+    console.log(result);
     console.log("Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude);
 }
