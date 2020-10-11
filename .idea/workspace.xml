@@ -8,12 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8522fd7-ce67-4223-923d-b870d1db7822" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/img/sl1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/sl2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/sl3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/sl4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/sl5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/sl6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
@@ -21,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/my.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/my.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/my.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/calc.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +131,7 @@
       <workItem from="1601651401484" duration="286000" />
       <workItem from="1601653861781" duration="98000" />
       <workItem from="1601978872540" duration="854000" />
-      <workItem from="1602412473698" duration="5650000" />
-    </task>
-    <task id="LOCAL-00006" summary="Верстка input">
-      <created>1596116480920</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1596116480920</updated>
+      <workItem from="1602412473698" duration="9331000" />
     </task>
     <task id="LOCAL-00007" summary="Верстка экрана &quot;Что входит в стоимость?&quot;">
       <created>1596137323491</created>
@@ -482,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602415493980</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Новая галерея">
+      <created>1602420831385</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1602420831385</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +487,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Верстка экрана &quot;Наши Услуги&quot;" />
     <MESSAGE value="Обновление экрана &quot;Наши Услуги&quot;" />
     <MESSAGE value="Верстка экрана &quot;Обратный звонок&quot;" />
     <MESSAGE value="Верстка экрана &quot;Подвал&quot;" />
@@ -518,7 +511,8 @@
     <MESSAGE value="Стол в футере, свг в услугах и мелкие фиксы" />
     <MESSAGE value="Модальное окно" />
     <MESSAGE value="Фиксы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Фиксы" />
+    <MESSAGE value="Новая галерея" />
+    <option name="LAST_COMMIT_MESSAGE" value="Новая галерея" />
   </component>
   <component name="WindowStateProjectService">
     <state x="50" y="250" key="#SQL_Dialects" timestamp="1601231799914">
@@ -533,10 +527,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1707" y="507" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335762818" />
-    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2" timestamp="1602415493637">
+    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2" timestamp="1602420830097">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1602415493637" />
+    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1602420830097" />
     <state x="201" y="0" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976480109" />
     <state x="0" y="27" width="1280" height="750" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653914065" />
     <state x="0" y="55" width="1280" height="969" key="CommitChangelistDialog2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335628240" />
@@ -570,10 +564,10 @@
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1810" y="315" key="VCS.ChangelistChooser/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1598361179108" />
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1602415496224">
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1602420833647">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602415496224" />
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602420833647" />
     <state x="260" y="204" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976485004" />
     <state x="1558" y="136" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653916894" />
     <state x="1558" y="392" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335616091" />

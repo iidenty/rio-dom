@@ -1,3 +1,9 @@
+// open city model after 15s
+setTimeout(function () {
+    $("#cityModal").modal('show');
+}, 10000)
+
+
 // Change header when scroll changed
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -454,6 +460,21 @@ mySwiper.autoplay.start();
 updateValueCalcFolder();
 
 $(".calc input").click(function (e) {
+    let elem = $(this)
+    if (elem.attr('name') === "repairs") {
+        let kv = $("input[value='kv']")
+        console.log(kv)
+        let mode = elem.val();
+        switch (mode) {
+            case "cosmetic":
+                // kv.attr('data-price', 0);
+                break;
+        }
+    }
+
+
+    console.log('Input');
+    console.log(elem.attr('name'));
     updateValueCalcFolder()
 })
 
