@@ -10760,20 +10760,22 @@ button.swiper-pagination-bullet {
   font-family: "Muller Regular";
   src: url("../fonts/Muller Regular.ttf"); }
 
+.modal {
+  z-index: 100000000000000; }
+
 .scrolled {
   transition: 0.2s;
   position: fixed;
   z-index: 100000000;
-  top: 0;
-  padding-top: 15px;
-  padding-bottom: 9px;
+  padding-top: 12px !important;
+  padding-bottom: 0;
+  top: -5px;
   width: 100%;
   background-color: black; }
 
 @media screen and (max-device-width: 767px) {
   .scrolled {
-    position: -webkit-sticky;
-    position: sticky;
+    position: static;
     background: none; } }
 
 body {
@@ -11582,8 +11584,7 @@ input {
   font-size: calc(16px + 0.3vw); }
 
 .reviews img {
-  max-height: 400px;
-  width: 100%; }
+  max-height: 400px; }
 
 .reviews__container {
   position: relative;
