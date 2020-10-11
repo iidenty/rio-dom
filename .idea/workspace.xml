@@ -8,6 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8522fd7-ce67-4223-923d-b870d1db7822" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/img/logo-green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
@@ -16,6 +18,8 @@
       <change beforePath="$PROJECT_DIR$/src/js/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/my.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/my.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/my.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/support.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +135,8 @@
       <workItem from="1601651401484" duration="286000" />
       <workItem from="1601653861781" duration="98000" />
       <workItem from="1601978872540" duration="854000" />
-      <workItem from="1602412473698" duration="9331000" />
-    </task>
-    <task id="LOCAL-00007" summary="Верстка экрана &quot;Что входит в стоимость?&quot;">
-      <created>1596137323491</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1596137323493</updated>
+      <workItem from="1602412473698" duration="9379000" />
+      <workItem from="1602429354514" duration="5493000" />
     </task>
     <task id="LOCAL-00008" summary="Верстка экрана &quot;Отзывы&quot;">
       <created>1596142015421</created>
@@ -476,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602420831385</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Калькулятор">
+      <created>1602428086601</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1602428086601</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +505,6 @@
     <MESSAGE value="Обновление 2 экрана" />
     <MESSAGE value="Обновление 3 экрана" />
     <MESSAGE value="Экран 'Наши услуги', адаптив." />
-    <MESSAGE value="Калькулятор" />
     <MESSAGE value="Правки" />
     <MESSAGE value="Calc slider for mobile" />
     <MESSAGE value="calc update" />
@@ -512,7 +516,8 @@
     <MESSAGE value="Модальное окно" />
     <MESSAGE value="Фиксы" />
     <MESSAGE value="Новая галерея" />
-    <option name="LAST_COMMIT_MESSAGE" value="Новая галерея" />
+    <MESSAGE value="Калькулятор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Калькулятор" />
   </component>
   <component name="WindowStateProjectService">
     <state x="50" y="250" key="#SQL_Dialects" timestamp="1601231799914">
@@ -527,18 +532,18 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1707" y="507" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335762818" />
-    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2" timestamp="1602420830097">
+    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2" timestamp="1602428086233">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1602420830097" />
+    <state x="150" y="130" width="910" height="494" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1602428086233" />
     <state x="201" y="0" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976480109" />
     <state x="0" y="27" width="1280" height="750" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653914065" />
     <state x="0" y="55" width="1280" height="969" key="CommitChangelistDialog2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335628240" />
     <state x="0" y="23" width="1280" height="750" key="CommitChangelistDialog2/1280.256.1366.768/0.27.1280.997@1280.256.1366.768" timestamp="1597694964311" />
-    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl" timestamp="1601653958938">
+    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl" timestamp="1602428111492">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1601653958938" />
+    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1602428111492" />
     <state x="1746" y="156" key="FileChooserDialogImpl/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599666950579" />
     <state x="1746" y="412" key="FileChooserDialogImpl/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597579943663" />
     <state x="1828" y="490" key="Github.ShareDialog" timestamp="1595260037344">
@@ -564,10 +569,10 @@
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1810" y="315" key="VCS.ChangelistChooser/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1598361179108" />
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1602420833647">
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1602428087971">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602420833647" />
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602428087971" />
     <state x="260" y="204" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976485004" />
     <state x="1558" y="136" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653916894" />
     <state x="1558" y="392" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335616091" />

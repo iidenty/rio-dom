@@ -3,6 +3,13 @@ setTimeout(function () {
     $("#cityModal").modal('show');
 }, 10000)
 
+// toast
+// var options = {
+//     autohide: false
+// }
+//
+// $('.toast').toast(options);
+// $('.toast').toast('show');
 
 // Change header when scroll changed
 $(window).scroll(function() {
@@ -196,7 +203,9 @@ function sendModal() {
         type: "POST",
         data: $('.modal form').serialize(),
         success: function(msg){
-            alert("Форма успешно отправлена")
+            // alert("Форма успешно отправлена")
+            $("#exampleModal .modal-info").css('opacity', 0);
+            $("#exampleModal .modal-success").css('opacity', 1);
         },
         error: function () {
             alert("Ошибка отправки формы")
@@ -319,7 +328,9 @@ function supportSend() {
         type: "POST",
         data: $('.support form').serialize(),
         success: function(msg){
-            alert("Форма успешно отправлена")
+            // alert("Форма успешно отправлена")
+            $(".support .modal-info").css('opacity', 0);
+            $(".support .modal-success").css('opacity', 1);
         },
         error: function () {
             alert("Ошибка отправки формы")
@@ -582,6 +593,7 @@ function updateValueCalcFolder() {
 }
 
 $(".calc input[name='area']").on('click', function () {
+    $(".calc .form-animate1").css('display', 'block');
     showForm()
 })
 

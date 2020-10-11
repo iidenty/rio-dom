@@ -12,16 +12,30 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=593376087cc45467b03eea2ceccffce3" rel="stylesheet" />
+    <link href="css/main.css?v=ecf7f6e167cdfbfb3cada5e4e7a8bcff" rel="stylesheet" />
     
     <title>Home</title>
 </head>
 <body>
+<div style="position: fixed; bottom: 0; right: 0; z-index: 10000000000000000" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="...">
+        <strong class="mr-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        Hello, world! This is a toast message.
+    </div>
+</div>
+
 <div class="modal modal-define fade" style="padding-left: 0 !important; padding-right: 0 !important;" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="pl-sm-5 pr-sm-5 pl-2 pr-2">
+                <div class="modal-info pl-sm-5 pr-sm-5 pl-2 pr-2">
                     <div class="modal__header pt-1 header-1 text-uppercase w-100 text-center">Получить Консультацию</div>
                     <div class="row">
                         <div class="col-10 offset-1">
@@ -63,6 +77,9 @@
                             </form>
                         </div>
                     </div>
+                </div>
+                <div class="modal-success">
+                    <img src="img/logo-green.png" alt="">
                 </div>
             </div>
         </div>
@@ -718,27 +735,30 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center mt-5 form-animate fadeInUp">
-                <div class="col-md-10 offset-md-1">
-                    <div class="row">
-                        <div class="col-md-6 pl-md-0 pb-3 pb-md-0 pr-md-0">
-                            <input autocomplete="off" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА"
-                                   type="text">
-                        </div>
-                        <div class="col-md-6 pb-3 pb-md-0 pl-md-0">
-<!--                           data-toggle="modal" data-target="#exampleModal"  ?-->
-                            <button class="h-100 btn-orange calc__btn text-uppercase w-100" onclick="sendCalc()">получить расчет по смс</button>
-                        </div>
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6 pt-md-3">
-                            <div class="text-center calc__usloviya">
-                                я принимаю условия <br>
-                                <span style="text-decoration: underline">пользовательского соглашения</span>
+            <div class="form-animate1" style="display: none; transition: all 1s">
+                <div class="row text-center mt-5 form-animate fadeInUp" >
+                    <div class="col-md-10 offset-md-1">
+                        <div class="row">
+                            <div class="col-md-6 pl-md-0 pb-3 pb-md-0 pr-md-0">
+                                <input autocomplete="off" class="phone text-center calc__input-number" placeholder="НОМЕР ТЕЛЕФОНА"
+                                       type="text">
+                            </div>
+                            <div class="col-md-6 pb-3 pb-md-0 pl-md-0">
+                                <!--                           data-toggle="modal" data-target="#exampleModal"  ?-->
+                                <button class="h-100 btn-orange calc__btn text-uppercase w-100" onclick="sendCalc()">получить расчет по смс</button>
+                            </div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6 pt-md-3">
+                                <div class="text-center calc__usloviya">
+                                    я принимаю условия <br>
+                                    <span style="text-decoration: underline">пользовательского соглашения</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -1403,24 +1423,29 @@
                 <div class="col-md-6 offset-md-3">
                     <form action="" method="post">
                         <div class="support__inner">
-                            <div class="support__header">
-                                Заказать обратный звонок для консультации
+                            <div class="modal-info">
+                                <div class="support__header">
+                                    Заказать обратный звонок для консультации
+                                </div>
+                                <div class="support__city mt-2">
+                                    <span class="d-inline">Ваш город:</span>
+                                    <span class="support__select" data-toggle="modal" data-target="#cityModal">ВЫБРАТЬ ГОРОД</span>
+                                    <input id="city__input" name="city" value="ВЫБРАТЬ ГОРОД" type="hidden">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <input class="support__input" id="support-name" type="text" name="name" placeholder="имя">
+                                </div>
+                                <div class="form-group">
+                                    <input class="support__input phone"  id="support-phone" type="text" name="phone" placeholder="номер телефона">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-orange support__btn w-100" onclick="supportSend()" style="border-radius: 15px">
+                                        ОТПРАВИТЬ ЗАЯВКУ
+                                    </button>
+                                </div>
                             </div>
-                            <div class="support__city mt-2">
-                                <span class="d-inline">Ваш город:</span>
-                                <span class="support__select" data-toggle="modal" data-target="#cityModal">ВЫБРАТЬ ГОРОД</span>
-                                <input id="city__input" name="city" value="ВЫБРАТЬ ГОРОД" type="hidden">
-                            </div>
-                            <div class="form-group mt-4">
-                                <input class="support__input" id="support-name" type="text" name="name" placeholder="имя">
-                            </div>
-                            <div class="form-group">
-                                <input class="support__input phone"  id="support-phone" type="text" name="phone" placeholder="номер телефона">
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="btn-orange support__btn w-100" onclick="supportSend()" style="border-radius: 15px">
-                                    ОТПРАВИТЬ ЗАЯВКУ
-                                </button>
+                            <div class="modal-success">
+                                <img src="img/logo-green.png" alt="">
                             </div>
                         </div>
                     </form>
@@ -1504,6 +1529,6 @@
 
     </div>
 </footer>
-<script defer src="js/main.js?v=593376087cc45467b03eea2ceccffce3"></script>
+<script defer src="js/main.js?v=ecf7f6e167cdfbfb3cada5e4e7a8bcff"></script>
 </body>
 </html>
