@@ -11217,13 +11217,26 @@ input {
   min-height: 600px; }
 
 .gallery__inner {
-  pointer-events: none;
+  pointer-events: all;
   position: relative;
   height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
+
+.gallery .swiper-slide {
+  padding: 3rem;
+  padding-bottom: 1rem; }
+
+.gallery__swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1; }
 
 .gallery__header {
   color: #ff8200;

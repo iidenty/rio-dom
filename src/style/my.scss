@@ -591,11 +591,27 @@ input {
 }
 
 .gallery__inner {
-  pointer-events: none;
+  //pointer-events: none;
+  pointer-events: all;
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.gallery .swiper-slide {
+  padding: 3rem;
+  padding-bottom: 1rem;
+}
+
+.gallery__swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
 .gallery__header {

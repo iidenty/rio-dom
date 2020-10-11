@@ -398,6 +398,26 @@ $('.services__item').click(function () {
 });
 
 //swiper
+var gswiper = new Swiper('.gallery__swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    // spaceBetween: 30,
+    autoplay: {
+        delay: 5000,
+    },
+    speed: 700,
+    spaceBetween: 200,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+
 var mySwiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 1,
