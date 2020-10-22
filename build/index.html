@@ -12,7 +12,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     
-    <link href="css/main.css?v=5eeb32137a8d455bd777ef1bcbe2dbc8" rel="stylesheet" />
+    <link href="css/main.css?v=797d6baa5d317ac020169169ab45a2fd" rel="stylesheet" />
     
     <title>Home</title>
 </head>
@@ -460,30 +460,6 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="calc__item">
-                                        <div class="item__header text-uppercase header-2">Вид помещения</div>
-                                        <div class="item__content row">
-                                            <div class="col-md">
-                                                <div class="custom-control custom-radio">
-                                                    <input class="custom-control-input" data-price="30000"
-                                                           id="customRadio11-p" name="view" type="radio"
-                                                           value="old_building">
-                                                    <label class="custom-control-label" for="customRadio11-p">ПОД
-                                                        КЛЮЧ</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md">
-                                                <div class="custom-control custom-radio">
-                                                    <input class="custom-control-input" data-price="21000" id="customRadio12-p"
-                                                           name="view" type="radio"
-                                                           value="new_building">
-                                                    <label class="custom-control-label" for="customRadio12-p">НОВОСТРОЙКА</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="calc__item">
                                         <div class="item__header text-uppercase header-2">Перепланировка</div>
                                         <div class="item__content row">
                                             <div class="col-6">
@@ -625,6 +601,22 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-6 mt-5 pt-1">
                             <div class="calc__item">
+                                <label class="item__header header-2 text-uppercase text-nowrap">
+                                    площадь помещения
+                                    <input disabled class="calc__input-text calc__end" name="area" type="number" step="50">
+                                    <span style="text-transform: lowercase">м<sup>2</sup></span>
+                                </label>
+                                <label class="item__header header-2 text-uppercase text-nowrap">
+                                    кол-во комнат
+                                    <input disabled class="calc__input-text" name="rooms" type="number">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 mt-5 d-none">
+                            <div class="calc__next-info"></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-6 mt-5 pt-1">
+                            <div class="calc__item">
                                 <div class="item__header text-uppercase header-2">Перепланировка</div>
                                 <div class="item__content d-flex">
                                     <div class="mr-4">
@@ -642,17 +634,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-1 mt-5 d-none">
-                            <div class="calc__next-info"></div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-6 mt-5 pt-1">
-                            <div class="calc__item">
-                                <label class="item__header header-2 text-uppercase text-nowrap">
-                                    кол-во комнат
-                                    <input disabled class="calc__input-text" name="rooms" type="number">
-                                </label>
                             </div>
                         </div>
                         <div class="col-lg-1 d-lg-block mt-5 d-none">
@@ -694,23 +675,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt-5 pt-1">
-                            <div class="calc__item">
-                                <label class="item__header header-2 text-uppercase text-nowrap">
-                                    площадь помещения
-                                    <input disabled class="calc__input-text calc__end" name="area" type="number" step="50">
-                                    <span style="text-transform: lowercase">м<sup>2</sup></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 mt-5 pt-1">
-
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="form-animate1" style="display: none; transition: all 1s">
-                <div class="row text-center mt-5 form-animate fadeInUp" >
+                <div class="row text-center mt-5 mb-5 form-animate fadeInUp" >
                     <div class="col-md-10 offset-md-1">
                         <div class="row">
                             <div class="col-md-6 pl-md-0 pb-3 pb-md-0 pr-md-0">
@@ -736,7 +705,7 @@
     </div>
 </section>
 
-<section class="include-price">
+<section class="include-price" style="position: relative; z-index: 100; margin-top: -3rem">
     <div class="include-price__container">
         <div class="include-price__inner">
             <div class="w-100">
@@ -1502,6 +1471,6 @@
 
     </div>
 </footer>
-<script defer src="js/main.js?v=5eeb32137a8d455bd777ef1bcbe2dbc8"></script>
+<script defer src="js/main.js?v=797d6baa5d317ac020169169ab45a2fd"></script>
 </body>
 </html>

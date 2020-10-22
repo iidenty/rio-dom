@@ -775,6 +775,7 @@ input {
 }
 
 .calc__container {
+  padding-bottom: 3rem;
   position: relative;
   z-index: 99;
   //background-image: url("../img/calc__background.png");
@@ -850,8 +851,9 @@ input {
 }
 
 .calc__folder-container-pc {
+  z-index: -1;
   position: relative;
-  margin-top: -120px;
+  margin-top: -175px;
 }
 
 .calc__folder img {
