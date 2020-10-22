@@ -604,7 +604,12 @@ function updateValueCalcFolder() {
     // }
 }
 
-$(".calc input[name='area']").on('click', function () {
+$(".calc__mobile input[name='area']").on('click', function () {
+    $(".calc .form-animate1").css('display', 'block');
+    showForm()
+})
+
+$(".calc__trigger label, .calc__trigger input").on('click', function () {
     $(".calc .form-animate1").css('display', 'block');
     showForm()
 })
