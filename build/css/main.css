@@ -11424,10 +11424,10 @@ input {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  font-size: 1.3em;
+  font-size: 2.3em;
   position: absolute;
-  bottom: 40px;
-  left: 61px;
+  bottom: 11px;
+  left: 97px;
   -webkit-transform: rotateX(62deg) rotateZ(19deg);
           transform: rotateX(62deg) rotateZ(19deg);
   color: #ff8200; }
