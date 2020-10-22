@@ -18668,9 +18668,36 @@ k("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
 
 // Импортируем другие js-файлы
 // open city model after 15s
-setTimeout(function () {
-    $("#cityModal").modal('show');
+setInterval(function () {
+    if (needShowCityForm && allowShowCityForm) {
+        $("#cityModal").modal('show');
+    }
 }, 10000)
+
+var needShowCityForm = true;
+var allowShowCityForm = true;
+
+$('#exampleModal').on('shown.bs.modal', function (e) {
+    allowShowCityForm = false;
+})
+
+$('#cityModal').on('shown.bs.modal', function (e) {
+    needShowCityForm = false;
+    allowShowCityForm = false;
+})
+
+$('#exampleModal').on('hidden.bs.modal', function (e) {
+    allowShowCityForm = true;
+})
+
+$('#cityModal').on('hidden.bs.modal', function (e) {
+    needShowCityForm = false;
+    allowShowCityForm = false;
+})
+
+
+
+
 
 // toast
 // var options = {
@@ -18712,7 +18739,7 @@ function showPosition(position) {
         "<br>Longitude: " + position.coords.longitude);
 }
 
-getLocation()
+//getLocation()
 
 var mobile = false;
 
@@ -18746,6 +18773,7 @@ $(".city__dropdown").on("click", "button", function (e) {
         //console.log(city)
         $(".support__select").text(city);
         $("#city__input").val(city);
+        $("#intro__city-data").text(city);
         $("#cityModal").modal('hide');
     }
 })
@@ -18760,6 +18788,7 @@ $(".city__collection li").on('click', function (e) {
         //console.log(city)
         $(".support__select").text(city);
         $("#city__input").val(city);
+        $("#intro__city-data").text(city);
         $("#cityModal").modal('hide');
     }
 })
@@ -18771,6 +18800,7 @@ $("#cityOpen").on('click', function () {
         city = "Не выбран"
     }
     //console.log(city)
+    $("#intro__city-data").text(city);
     $(".support__select").text(city);
     $("#city__input").val(city);
     $("#cityModal").modal('hide');

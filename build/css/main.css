@@ -10854,12 +10854,19 @@ body {
 label {
   display: block; }
 
+.intro__city-head {
+  padding: 0.2rem 1rem;
+  border-radius: 14px;
+  background-color: #ffffff;
+  color: #949494; }
+
 #cityModal {
   padding-right: 0 !important; }
 
 .city__header {
   box-shadow: 0 2rem 32px rgba(0, 0, 0, 0.17);
-  padding: 3rem 3rem; }
+  padding: 3rem 3rem;
+  padding-top: 1rem; }
 
 .city__title {
   text-align: center;
