@@ -283,7 +283,9 @@ function sendCalc() {
             type: "POST",
             data: {"name": name, "phone": phone, "data": data},
             success: function(msg){
-                alert("Форма успешно отправлена")
+                // alert("Форма успешно отправлена")
+                $(".calc .modal-info").css('opacity', 0);
+                $(".calc .modal-success").css('opacity', 1);
                 console.log(msg)
             },
             error: function () {
@@ -319,7 +321,9 @@ function sendCalc() {
             type: "POST",
             data: {"name": name, "phone": phone, "data": data},
             success: function(msg){
-                alert("Форма успешно отправлена")
+                // alert("Форма успешно отправлена")
+                $(".calc .modal-info").css('opacity', 0);
+                $(".calc .modal-success").css('opacity', 1);
                 console.log(msg)
             },
             error: function () {
