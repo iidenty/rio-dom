@@ -104,6 +104,7 @@ $(".city__dropdown").on("click", "button", function (e) {
         //console.log(city)
         $(".support__select").text(city);
         $("#city__input").val(city);
+        $(".city").val(city);
         $("#intro__city-data").text(city);
         $("#cityModal").modal('hide');
     }
@@ -119,6 +120,7 @@ $(".city__collection li").on('click', function (e) {
         //console.log(city)
         $(".support__select").text(city);
         $("#city__input").val(city);
+        $(".city").val(city);
         $("#intro__city-data").text(city);
         $("#cityModal").modal('hide');
     }
@@ -134,6 +136,7 @@ $("#cityOpen").on('click', function () {
     $("#intro__city-data").text(city);
     $(".support__select").text(city);
     $("#city__input").val(city);
+    $(".city").val(city);
     $("#cityModal").modal('hide');
 })
 
@@ -255,6 +258,8 @@ function sendCalc() {
         return false;
     }
 
+    let city = $("#cityCore").val()
+
     if ($(".calc__pc input[name='rooms']").val() == "") {
         // Получение данных из мобильной версии
         let type = $(".calc__mobile input[name='type']:checked").val()
@@ -267,6 +272,7 @@ function sendCalc() {
 
         let data = {
             "type" : type,
+            "city" : city,
             "repairs" : repairs,
             "view" : view,
             "redevelopment" : redevelopment,
@@ -306,6 +312,7 @@ function sendCalc() {
         let data = {
             "type" : type,
             "repairs" : repairs,
+            "city" : city,
             "view" : view,
             "redevelopment" : redevelopment,
             "alignment" : alignment,
@@ -314,7 +321,7 @@ function sendCalc() {
             "value" : value,
         }
 
-        console.log('data', type, repairs, view, redevelopment, alignment, rooms, area);
+        console.log('data', data);
 
         $.ajax({
             url: "calc.php",

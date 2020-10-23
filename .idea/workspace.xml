@@ -7,28 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8522fd7-ce67-4223-923d-b870d1db7822" name="Default Changelist" comment="(4) Кнопка выбора города.">
-      <change afterPath="$PROJECT_DIR$/build/img/back_galereya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/img/gll9.png" afterDir="false" />
+    <list default="true" id="c8522fd7-ce67-4223-923d-b870d1db7822" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/build/calc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/my.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/my.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/calc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/modal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,14 +139,7 @@
       <workItem from="1603121884622" duration="33000" />
       <workItem from="1603361900954" duration="6283000" />
       <workItem from="1603387956515" duration="6029000" />
-      <workItem from="1603463757693" duration="4717000" />
-    </task>
-    <task id="LOCAL-00017" summary="Верстка экрана &quot;Отзывы&quot;">
-      <created>1596792506645</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1596792506645</updated>
+      <workItem from="1603463757693" duration="6581000" />
     </task>
     <task id="LOCAL-00018" summary="Правки">
       <created>1596792783598</created>
@@ -497,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603392062784</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Успешный результат отправки калькулятора">
+      <created>1603468632976</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1603468632978</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +495,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Обновление 1 экрана" />
     <MESSAGE value="Обновление 2 экрана" />
     <MESSAGE value="Обновление 3 экрана" />
     <MESSAGE value="Экран 'Наши услуги', адаптив." />
@@ -533,7 +519,8 @@
     <MESSAGE value="task (6) update" />
     <MESSAGE value="Кнопка закрытия модальных окон и закрытие формы с городом при выборе" />
     <MESSAGE value="(4) Кнопка выбора города." />
-    <option name="LAST_COMMIT_MESSAGE" value="(4) Кнопка выбора города." />
+    <MESSAGE value="Успешный результат отправки калькулятора" />
+    <option name="LAST_COMMIT_MESSAGE" value="Успешный результат отправки калькулятора" />
   </component>
   <component name="WindowStateProjectService">
     <state x="50" y="250" key="#SQL_Dialects" timestamp="1601231799914">
@@ -548,10 +535,10 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1707" y="507" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335762818" />
-    <state x="150" y="130" width="910" height="593" key="CommitChangelistDialog2" timestamp="1603395911357">
+    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2" timestamp="1603468631869">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="150" y="130" width="910" height="593" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1603395911357" />
+    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1603468631869" />
     <state x="201" y="0" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976480109" />
     <state x="0" y="27" width="1280" height="750" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653914065" />
     <state x="0" y="55" width="1280" height="969" key="CommitChangelistDialog2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335628240" />
@@ -585,10 +572,10 @@
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1810" y="315" key="VCS.ChangelistChooser/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1598361179108" />
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1603392074895">
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1603468658003">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603392074895" />
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603468658003" />
     <state x="260" y="204" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976485004" />
     <state x="1558" y="136" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653916894" />
     <state x="1558" y="392" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335616091" />

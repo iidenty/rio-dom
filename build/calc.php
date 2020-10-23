@@ -9,6 +9,7 @@ if (!empty($_POST)) {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $data = $_POST['data'];
+    $city = $_POST['city'];
 
     if (empty($name)) {
         $err[] = "Поле 'имя' должно быть заполнено";
@@ -26,10 +27,10 @@ if (!empty($_POST)) {
     if (empty($data["repairs"]))        { $data["repairs"] = "Неизвестно";       }
     if (empty($data["view"]))           { $data["view"] = "Неизвестно";          }
     if (empty($data["redevelopment"]))  { $data["redevelopment"] = "Неизвестно"; }
-    if (empty($data["alignment"]))      { $data["alignment"] = "Неизвестно";     }
     if (empty($data["rooms"]))          { $data["rooms"] = "Неизвестно";         }
     if (empty($data["area"]))           { $data["area"] = "Неизвестно";          }
     if (empty($data["value"]))          { $data["value"] = "Неизвестно";         }
+    if (empty($data["city"]))           { $data["city"] = "Неизвестно";          }
 
 //
     if (count($err) > 0) {
@@ -45,7 +46,6 @@ if (!empty($_POST)) {
     htmlspecialchars_decode($data["repairs"]);
     htmlspecialchars_decode($data["view"]);
     htmlspecialchars_decode($data["redevelopment"]);
-    htmlspecialchars_decode($data["alignment"]);
     htmlspecialchars_decode($data["rooms"]);
     htmlspecialchars_decode($data["area"]);
     htmlspecialchars_decode($data["value"]);
@@ -63,10 +63,6 @@ if (!empty($_POST)) {
         <p>
             <b>Вид ремонта: </b>
             <span>" . $data['repairs'] . "</span>
-        </p>
-        <p>
-            <b>Вид помещения: </b>
-            <span>" . $data['alignment'] . "</span>
         </p>
         <p>
             <b>Перепланировка: </b>
