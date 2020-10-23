@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     
     <!-- Useful meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Хотите жить в квартире с уникальным интерьером? Дизайн-проект – это возможность получить уникальный интерьер от именитых дизайнеров. Ваши желания в точности реализуются любой профессиональной бригадой благодаря детальным планам, макетам и подробным инструкциям.">
-    <meta name="keywords" content="Ремонт, Утепление, Квартира, Офис, Отзывы, Услуги">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <!--<meta name="format-detection" content="telephone=no">-->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Хотите жить в квартире с уникальным интерьером? Дизайн-проект – это возможность получить уникальный интерьер от именитых дизайнеров. Ваши желания в точности реализуются любой профессиональной бригадой благодаря детальным планам, макетам и подробным инструкциям."
+          name="description">
+    <meta content="Ремонт, Утепление, Квартира, Офис, Отзывы, Услуги" name="keywords">
+    <meta content="index, follow" name="robots">
+    <meta content="index, follow" name="googlebot">
+    <meta content="notranslate" name="google">
     
-    <link href="css/main.css?v=ee5e1f272d823f938a2e94765d0ac13f" rel="stylesheet" />
+    <link href="css/main.css?v=4cf3a3235d5a909992bfeb1d55db26b2" rel="stylesheet"/>
     
     <title>Rio-Dom.ru - современный ремонт квартир</title>
 </head>
@@ -164,6 +164,24 @@
 
 <input id="cityCore" type="hidden" name="city" class="city" value="Москва и МО">
 
+<style>
+    .intro__item {
+        color: white;
+    }
+
+    .intro__center a:hover {
+        text-decoration: none !important;
+        text-transform: none !important;
+        color: #ffd227 !important;
+        transition: color 0.5s;
+    }
+
+    .intro__center a:hover .intro__item{
+        color: #ffd227 !important;
+        transition: color 0.5s;
+    }
+</style>
+
 <section class="intro">
     <div class="intro__container text-center text-white">
 <!--        <h1 class="intro__header text-orange-lg text-white text-center w-100">Интро <br> (Жду макет)</h1>-->
@@ -215,6 +233,7 @@
                 </div>
             </div>
         </div>
+
         <div class="intro__center">
 <!--            <img class="img-fluid" src="img/joke.png" alt="">-->
             <div class="container">
@@ -227,7 +246,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-12 order-first order-md-1 position-relative">
-                                <div class="pulse-container pulse"></div>
+                                <div class="pulse-container pulse" style="pointer-events: none"></div>
                                 <div class="intro__title-top">СОВРЕМЕННЫЙ</div>
                                 <div class="intro__title position-relative">
                                     <div>РЕМОНТ</div>
@@ -236,9 +255,11 @@
                                 </div>
                             </div>
                             <div class="col-md-4 mt-3 mt-md-0 order-last col-6 d-flex align-items-center justify-content-center justify-content-lg-start">
-                                <div class="intro__item">
-                                    УТЕПЛЕНИЕ <br>ЛОДЖИИ И <br>БАЛКОНОВ
-                                </div>
+                                <a href="https://rio-dom.ru/balcony">
+                                    <div class="intro__item text-decoration-none">
+                                        УТЕПЛЕНИЕ <br>ЛОДЖИИ И <br>БАЛКОНОВ
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="intro__btn-container">
@@ -1501,6 +1522,6 @@
 
     </div>
 </footer>
-<script defer src="js/main.js?v=ee5e1f272d823f938a2e94765d0ac13f"></script>
+<script defer src="js/main.js?v=4cf3a3235d5a909992bfeb1d55db26b2"></script>
 </body>
 </html>
