@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rio-dom.balcon.local/public_html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -132,13 +132,7 @@
       <workItem from="1603387956515" duration="6029000" />
       <workItem from="1603463757693" duration="7676000" />
       <workItem from="1603483763140" duration="1151000" />
-    </task>
-    <task id="LOCAL-00021" summary="Обновление 3 экрана">
-      <created>1598334785036</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1598334785036</updated>
+      <workItem from="1603485843116" duration="46000" />
     </task>
     <task id="LOCAL-00022" summary="fix">
       <created>1598335221284</created>
@@ -476,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603484295614</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="fixs">
+      <created>1603485877326</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1603485877326</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +488,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Правки" />
     <MESSAGE value="Calc slider for mobile" />
     <MESSAGE value="calc update" />
     <MESSAGE value="fix" />
@@ -512,7 +512,8 @@
     <MESSAGE value="Загрузка городов в бэке" />
     <MESSAGE value="СЕО" />
     <MESSAGE value="add link" />
-    <option name="LAST_COMMIT_MESSAGE" value="add link" />
+    <MESSAGE value="fixs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="50" y="250" key="#SQL_Dialects" timestamp="1601231799914">
@@ -527,18 +528,18 @@
       <screen x="1280" y="256" width="1366" height="768" />
     </state>
     <state x="1707" y="507" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335762818" />
-    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2" timestamp="1603484295480">
+    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2" timestamp="1603485877211">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1603484295480" />
+    <state x="368" y="100" width="910" height="593" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1603485877211" />
     <state x="201" y="0" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976480109" />
     <state x="0" y="27" width="1280" height="750" key="CommitChangelistDialog2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653914065" />
     <state x="0" y="55" width="1280" height="969" key="CommitChangelistDialog2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335628240" />
     <state x="0" y="23" width="1280" height="750" key="CommitChangelistDialog2/1280.256.1366.768/0.27.1280.997@1280.256.1366.768" timestamp="1597694964311" />
-    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl" timestamp="1603485839381">
+    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl" timestamp="1603485887745">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1603485839381" />
+    <state x="466" y="178" width="434" height="485" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1603485887745" />
     <state x="1746" y="156" key="FileChooserDialogImpl/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599666950579" />
     <state x="1746" y="412" key="FileChooserDialogImpl/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597579943663" />
     <state x="1828" y="490" key="Github.ShareDialog" timestamp="1595260037344">
@@ -564,10 +565,10 @@
       <screen x="1280" y="0" width="1366" height="768" />
     </state>
     <state x="1810" y="315" key="VCS.ChangelistChooser/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1598361179108" />
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1603484297292">
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2" timestamp="1603485879346">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603484297292" />
+    <state x="308" y="138" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1603485879346" />
     <state x="260" y="204" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@0.27.1280.997" timestamp="1598976485004" />
     <state x="1558" y="136" key="Vcs.Push.Dialog.v2/1280.0.1366.768/0.27.1280.997@1280.0.1366.768" timestamp="1599653916894" />
     <state x="1558" y="392" key="Vcs.Push.Dialog.v2/1280.256.1366.768/0.0.1280.1024@1280.256.1366.768" timestamp="1597335616091" />

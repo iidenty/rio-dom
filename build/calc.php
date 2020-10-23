@@ -9,7 +9,7 @@ if (!empty($_POST)) {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $data = $_POST['data'];
-    $city = $_POST['city'];
+    //$city = $_POST['city'];
 
     if (empty($name)) {
         $err[] = "Поле 'имя' должно быть заполнено";
@@ -49,12 +49,13 @@ if (!empty($_POST)) {
     htmlspecialchars_decode($data["rooms"]);
     htmlspecialchars_decode($data["area"]);
     htmlspecialchars_decode($data["value"]);
+    htmlspecialchars_decode($data["city"]);
 
     $message = "
         <h1>Заявка на расчет по СМС от rio-dom.ru</h1>
         <p>
             <b>Город:</b>
-            <span>$city</span>
+            <span>" . $data["city"] ."</span>
         </p>
         <p>
             <b>Номер телефона:</b>
