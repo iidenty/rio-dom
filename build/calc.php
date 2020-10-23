@@ -53,6 +53,10 @@ if (!empty($_POST)) {
     $message = "
         <h1>Заявка на расчет по СМС от rio-dom.ru</h1>
         <p>
+            <b>Город:</b>
+            <span>$city</span>
+        </p>
+        <p>
             <b>Номер телефона:</b>
             <span>$phone</span>
         </p>
