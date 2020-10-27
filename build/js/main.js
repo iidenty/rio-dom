@@ -18761,6 +18761,24 @@ if ($(window).width() < 767) {
 
 // Выбор города
 // Смена значения города из модального окна при нажатии город в выпадающем списке или общем списке
+// keydown form
+$(document).ready(function() {
+    $('#city__input-text').keydown(function(e) {
+        if(e.keyCode === 13) {
+            console.log('close')
+            let city = $("#city__input-text").val();
+            if (city === "") {
+                city = "Не выбран"
+            }
+            console.log(city)
+            $(".support__select").text(city);
+            $("#city__input").val(city);
+            $(".city").val(city);
+            $("#intro__city-data").text(city);
+            $("#cityModal").modal('hide');
+        }
+    });
+});
 
 $(".city__dropdown").on("click", "button", function (e) {
     $("#city__input-text").val($(this).text())
