@@ -14,7 +14,7 @@
     "jquery": "^3.3.1",
     "jquery-mask-plugin": "^1.14.16",
     "popper.js": "^1.14.6",
-    "swiper": "^6.1.1"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
